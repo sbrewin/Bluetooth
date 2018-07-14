@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HCILESetRandomAddress Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Struct/HCILESetRandomAddress" class="dashAnchor"></a>
+
+    <a title="HCILESetRandomAddress Structure Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          Bluetooth Docs
+        </a>
+         (77% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="../search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/PureSwift/Bluetooth">
+            <img class="header-icon" src="../img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">Bluetooth Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      HCILESetRandomAddress Structure Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ATTConnection.html">ATTConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GATTClient.html">GATTClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GATTClient/Service.html">– Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GATTClient/Characteristic.html">– Characteristic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GATTClient/Descriptor.html">– Descriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/GATTServer.html">GATTServer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATT.html">ATT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATTAttributePermission.html">ATTAttributePermission</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATTConnectionError.html">ATTConnectionError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATTError.html">ATTError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATTOpcode.html">ATTOpcode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATTOpcodeType.html">ATTOpcodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ATTResponse.html">ATTResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AdvertisingChannelHeader.html">AdvertisingChannelHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/AnyATTResponse.html">AnyATTResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BluetoothHostControllerError.html">BluetoothHostControllerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/BluetoothUUID.html">BluetoothUUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums.html#/s:O9Bluetooth3GAP">GAP</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAP3DInformationFlag.html">GAP3DInformationFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPBeaconType.html">GAPBeaconType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPFlag.html">GAPFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPIndoorPositioningFlag.html">GAPIndoorPositioningFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPLEDeviceAddressType.html">GAPLEDeviceAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPLERole.html">GAPLERole</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPLERole/Role.html">– Role</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPMeshBeacon.html">GAPMeshBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPOOBInformationFlag.html">GAPOOBInformationFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPSecureNetworkFlag.html">GAPSecureNetworkFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPSecurityManagerOOBFlag.html">GAPSecurityManagerOOBFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GAPTransportDiscoveryDataFlag.html">GAPTransportDiscoveryDataFlag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT.html">GATT</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/UUID.html">– UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/CharacteristicProperty.html">– CharacteristicProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/CharacteristicExtendedProperty.html">– CharacteristicExtendedProperty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/CharacteristicDescriptor.html">– CharacteristicDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/Service.html">– Service</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/Include.html">– Include</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/Characteristic.html">– Characteristic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATT/Descriptor.html">– Descriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTAlertCategory.html">GATTAlertCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTAlertLevel.html">GATTAlertLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTBarometricPressureTrend.html">GATTBarometricPressureTrend</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTBeatsPerMinute.html">GATTBeatsPerMinute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTBeatsPerMinute/Byte.html">– Byte</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTBodySensorLocation.html">GATTBodySensorLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTClientError.html">GATTClientError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTClientError/UserInfoKey.html">– UserInfoKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTClientResponse.html">GATTClientResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTDstOffset.html">GATTDstOffset</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTKilogramCalorie.html">GATTKilogramCalorie</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTKilogramCalorie/Byte.html">– Byte</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTKilogramCalorie/Bits16.html">– Bits16</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTScanRefresh.html">GATTScanRefresh</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTTimeSource.html">GATTTimeSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTTimeTriggerSetting.html">GATTTimeTriggerSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTTimeTriggerSettingCondition.html">GATTTimeTriggerSettingCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/GATTTimeUpdateControlPoint.html">GATTTimeUpdateControlPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HCIError.html">HCIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HCIGeneralEvent.html">HCIGeneralEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HCILowEnergyCommand.html">HCILowEnergyCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HCIOpcodeGroupField.html">HCIOpcodeGroupField</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HCIStatus.html">HCIStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HCIVersion.html">HCIVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HostControllerBasebandCommand.html">HostControllerBasebandCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/InformationalCommand.html">InformationalCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LinkControlCommand.html">LinkControlCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LinkPolicyCommand.html">LinkPolicyCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyAddressType.html">LowEnergyAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyAdvertiserAddressType.html">LowEnergyAdvertiserAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyAllPhys.html">LowEnergyAllPhys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyClockAccuracy.html">LowEnergyClockAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyEvent.html">LowEnergyEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyFeature.html">LowEnergyFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyFragmentPreference.html">LowEnergyFragmentPreference</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyPacketPayload.html">LowEnergyPacketPayload</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyPeerIdentifyAddressType.html">LowEnergyPeerIdentifyAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyPhyOptions.html">LowEnergyPhyOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyRole.html">LowEnergyRole</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyRxPhy.html">LowEnergyRxPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyRxPhys.html">LowEnergyRxPhys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyState.html">LowEnergyState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyStateSet.html">LowEnergyStateSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyTxPhy.html">LowEnergyTxPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyTxPhys.html">LowEnergyTxPhys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyWhiteListAddressType.html">LowEnergyWhiteListAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LowEnergyWhiteListDevice.html">LowEnergyWhiteListDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/POSIXErrorCode.html">POSIXErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ProtocolServiceMultiplexer.html">ProtocolServiceMultiplexer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/SecurityLevel.html">SecurityLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/StatusParametersCommand.html">StatusParametersCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Float.html">Float</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Foundation.html">Foundation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Foundation/UUID.html">– UUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/POSIXError.html">POSIXError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UInt32.html">UInt32</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UInt64.html">UInt64</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UUID.html">UUID</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ATTProtocolDataUnit.html">ATTProtocolDataUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BitMaskOption.html">BitMaskOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BluetoothHostControllerInterface.html">BluetoothHostControllerInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/BluetoothUnit.html">BluetoothUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ByteSwap.html">ByteSwap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ByteValue.html">ByteValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GAPData.html">GAPData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GAPMeshBeaconProtocol.html">GAPMeshBeaconProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GATTCharacteristic.html">GATTCharacteristic</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GATTDescriptor.html">GATTDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/GATTService.html">GATTService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCICommand.html">HCICommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCICommandParameter.html">HCICommandParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCICommandReturnParameter.html">HCICommandReturnParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCIEvent.html">HCIEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCIEventParameter.html">HCIEventParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCIPacketHeader.html">HCIPacketHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/HCIVersioned.html">HCIVersioned</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/L2CAPSocketProtocol.html">L2CAPSocketProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTErrorResponse.html">ATTErrorResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTExecuteWriteRequest.html">ATTExecuteWriteRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTExecuteWriteRequest/Flag.html">– Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTExecuteWriteResponse.html">ATTExecuteWriteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindByTypeRequest.html">ATTFindByTypeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindByTypeResponse.html">ATTFindByTypeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindByTypeResponse/HandlesInformation.html">– HandlesInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindInformationRequest.html">ATTFindInformationRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindInformationResponse.html">ATTFindInformationResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindInformationResponse/Format.html">– Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTFindInformationResponse/AttributeData.html">– AttributeData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTHandleValueConfirmation.html">ATTHandleValueConfirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTHandleValueIndication.html">ATTHandleValueIndication</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTHandleValueNotification.html">ATTHandleValueNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTMaximumTransmissionUnit.html">ATTMaximumTransmissionUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTMaximumTransmissionUnitRequest.html">ATTMaximumTransmissionUnitRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTMaximumTransmissionUnitResponse.html">ATTMaximumTransmissionUnitResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTPrepareWriteRequest.html">ATTPrepareWriteRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTPrepareWriteResponse.html">ATTPrepareWriteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadBlobRequest.html">ATTReadBlobRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadBlobResponse.html">ATTReadBlobResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadByGroupTypeRequest.html">ATTReadByGroupTypeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadByGroupTypeResponse.html">ATTReadByGroupTypeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadByGroupTypeResponse/AttributeData.html">– AttributeData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadByTypeRequest.html">ATTReadByTypeRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadByTypeResponse.html">ATTReadByTypeResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadByTypeResponse/AttributeData.html">– AttributeData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadMultipleRequest.html">ATTReadMultipleRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadMultipleResponse.html">ATTReadMultipleResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadRequest.html">ATTReadRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTReadResponse.html">ATTReadResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTSignedWriteCommand.html">ATTSignedWriteCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTWriteCommand.html">ATTWriteCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTWriteRequest.html">ATTWriteRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ATTWriteResponse.html">ATTWriteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/Address.html">Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AdvertisingInterval.html">AdvertisingInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/AppleBeacon.html">AppleBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BitMaskOptionSet.html">BitMaskOptionSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/CompanyIdentifier.html">CompanyIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ConnectionAcceptTimeout.html">ConnectionAcceptTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAP3DInformation.html">GAP3DInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAdvertisingInterval.html">GAPAdvertisingInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance.html">GAPAppearance</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Subcategory.html">– Subcategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Unknown.html">– Unknown</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Phone.html">– Phone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Computer.html">– Computer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Watch.html">– Watch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Clock.html">– Clock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Display.html">– Display</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/RemoteControl.html">– RemoteControl</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/EyeGlasses.html">– EyeGlasses</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Tag.html">– Tag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Keyring.html">– Keyring</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/MediaPlayer.html">– MediaPlayer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/BarcodeScanner.html">– BarcodeScanner</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/Thermometer.html">– Thermometer</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearance/HeartrateSensor.html">– HeartrateSensor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPAppearanceData.html">GAPAppearanceData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPChannelMapUpdateIndication.html">GAPChannelMapUpdateIndication</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPClassOfDevice.html">GAPClassOfDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPCompleteListOf128BitServiceClassUUIDs.html">GAPCompleteListOf128BitServiceClassUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPCompleteListOf16BitServiceClassUUIDs.html">GAPCompleteListOf16BitServiceClassUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPCompleteListOf32BitServiceClassUUIDs.html">GAPCompleteListOf32BitServiceClassUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPCompleteLocalName.html">GAPCompleteLocalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPDataDecoder.html">GAPDataDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPDataDecoder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPDataElement.html">GAPDataElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPDataEncoder.html">GAPDataEncoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPDataType.html">GAPDataType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPFlags.html">GAPFlags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPIncompleteListOf128BitServiceClassUUIDs.html">GAPIncompleteListOf128BitServiceClassUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPIncompleteListOf16BitServiceClassUUIDs.html">GAPIncompleteListOf16BitServiceClassUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPIncompleteListOf32BitServiceClassUUIDs.html">GAPIncompleteListOf32BitServiceClassUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPIndoorPositioning.html">GAPIndoorPositioning</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPLEDeviceAddress.html">GAPLEDeviceAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPLESecureConnectionsConfirmation.html">GAPLESecureConnectionsConfirmation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPLESecureConnectionsRandom.html">GAPLESecureConnectionsRandom</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPLESupportedFeatures.html">GAPLESupportedFeatures</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPListOf128BitServiceSolicitationUUIDs.html">GAPListOf128BitServiceSolicitationUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPListOf16BitServiceSolicitationUUIDs.html">GAPListOf16BitServiceSolicitationUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPListOf32BitServiceSolicitationUUIDs.html">GAPListOf32BitServiceSolicitationUUIDs</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPManufacturerSpecificData.html">GAPManufacturerSpecificData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPMeshMessage.html">GAPMeshMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPPBADV.html">GAPPBADV</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPPublicTargetAddress.html">GAPPublicTargetAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPRandomTargetAddress.html">GAPRandomTargetAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPSecureNetworkBeacon.html">GAPSecureNetworkBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPSecurityManagerOOBFlags.html">GAPSecurityManagerOOBFlags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPSecurityManagerTKValue.html">GAPSecurityManagerTKValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPServiceData128BitUUID.html">GAPServiceData128BitUUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPServiceData16BitUUID.html">GAPServiceData16BitUUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPServiceData32BitUUID.html">GAPServiceData32BitUUID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPShortLocalName.html">GAPShortLocalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPSimplePairingHashC.html">GAPSimplePairingHashC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPSimplePairingRandomizerR.html">GAPSimplePairingRandomizerR</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPSlaveConnectionIntervalRange.html">GAPSlaveConnectionIntervalRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPTransportDiscoveryBlock.html">GAPTransportDiscoveryBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPTransportDiscoveryData.html">GAPTransportDiscoveryData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPTxPowerLevel.html">GAPTxPowerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPURI.html">GAPURI</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GAPUnprovisionedDeviceBeacon.html">GAPUnprovisionedDeviceBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAerobicHeartRateLowerLimit.html">GATTAerobicHeartRateLowerLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAerobicHeartRateUpperLimit.html">GATTAerobicHeartRateUpperLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAerobicThreshold.html">GATTAerobicThreshold</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAge.html">GATTAge</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAge/Year.html">– Year</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAggregateFormatDescriptor.html">GATTAggregateFormatDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertCategoryBitMask.html">GATTAlertCategoryBitMask</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertCategoryBitMask/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertNotificationControlPoint.html">GATTAlertNotificationControlPoint</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertNotificationControlPoint/Command.html">– Command</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertNotificationService.html">GATTAlertNotificationService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertStatus.html">GATTAlertStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAlertStatus/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAltitude.html">GATTAltitude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAnaerobicHeartRateLowerLimit.html">GATTAnaerobicHeartRateLowerLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAnaerobicHeartRateUpperLimit.html">GATTAnaerobicHeartRateUpperLimit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAnalog.html">GATTAnalog</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTAnalogOutput.html">GATTAnalogOutput</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryLevel.html">GATTBatteryLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryPercentage.html">GATTBatteryPercentage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryPowerState.html">GATTBatteryPowerState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryPowerState/BatteryPresentState.html">– BatteryPresentState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryPowerState/BatteryDischargeState.html">– BatteryDischargeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryPowerState/BatteryChargeState.html">– BatteryChargeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryPowerState/BatteryLevelState.html">– BatteryLevelState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBatteryService.html">GATTBatteryService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureFeature.html">GATTBloodPressureFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureFeature/Feature.html">– Feature</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureMeasurement.html">GATTBloodPressureMeasurement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureMeasurement/Unit.html">– Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureMeasurement/CompoundValue.html">– CompoundValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureMeasurement/MeasurementStatus.html">– MeasurementStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBloodPressureService.html">GATTBloodPressureService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyCompositionMeasurement.html">GATTBodyCompositionMeasurement</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyCompositionMeasurement/MassUnit.html">– MassUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyCompositionMeasurement/LengthUnit.html">– LengthUnit</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyCompositionMeasurement/BodyMass.html">– BodyMass</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyCompositionMeasurement/BodyLength.html">– BodyLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyEnergy.html">GATTBodyEnergy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyPercentage.html">GATTBodyPercentage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBodyResistance.html">GATTBodyResistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBootKeyboardInputReport.html">GATTBootKeyboardInputReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBootKeyboardOutputReport.html">GATTBootKeyboardOutputReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTBootMouseInputReport.html">GATTBootMouseInputReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCGMSessionRunTime.html">GATTCGMSessionRunTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCGMSessionRunTime/Hour.html">– Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCentralAddressResolution.html">GATTCentralAddressResolution</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCharacteristicExtendedProperties.html">GATTCharacteristicExtendedProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCharacteristicExtendedProperties/Property.html">– Property</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCharacteristicFormatType.html">GATTCharacteristicFormatType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTClientCharacteristicConfiguration.html">GATTClientCharacteristicConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTClientCharacteristicConfiguration/Configuration.html">– Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData.html">GATTCrossTrainerData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/KilometerPerHour.html">– KilometerPerHour</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/Metre.html">– Metre</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/StepPerMinute.html">– StepPerMinute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/Unitless.html">– Unitless</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/Percentage.html">– Percentage</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/PlainAngleDegree.html">– PlainAngleDegree</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/Power.html">– Power</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/MetabolicEquivalent.html">– MetabolicEquivalent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCrossTrainerData/Time.html">– Time</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCurrentTime.html">GATTCurrentTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTCurrentTime/Flag.html">– Flag</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDatabase.html">GATTDatabase</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDatabase/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime.html">GATTDateTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime/Year.html">– Year</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime/Month.html">– Month</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime/Day.html">– Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime/Hour.html">– Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime/Minute.html">– Minute</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateTime/Second.html">– Second</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateUTC.html">GATTDateUTC</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDateUTC/Day.html">– Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDayDateTime.html">GATTDayDateTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDayOfWeek.html">GATTDayOfWeek</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTDayOfWeek/Day.html">– Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTE2ecrc.html">GATTE2ecrc</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTExactTime100.html">GATTExactTime100</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTExactTime100/Second.html">– Second</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTExactTime256.html">GATTExactTime256</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTExternalReportReference.html">GATTExternalReportReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTFirmwareRevisionString.html">GATTFirmwareRevisionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTFloorNumber.html">GATTFloorNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTFormatDescriptor.html">GATTFormatDescriptor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTHardwareRevisionString.html">GATTHardwareRevisionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTIndoorPositioningConfiguration.html">GATTIndoorPositioningConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTIndoorPositioningConfiguration/Configuration.html">– Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTLatitude.html">GATTLatitude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTLocalEastCoordinate.html">GATTLocalEastCoordinate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTLocalNorthCoordinate.html">GATTLocalNorthCoordinate</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTLocalTimeInformation.html">GATTLocalTimeInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTLocationName.html">GATTLocationName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTLongitude.html">GATTLongitude</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTManufacturerNameString.html">GATTManufacturerNameString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTModelNumber.html">GATTModelNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTNewAlert.html">GATTNewAlert</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTNewAlert/Information.html">– Information</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTNumberOfDigitals.html">GATTNumberOfDigitals</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTObjectID.html">GATTObjectID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTObjectName.html">GATTObjectName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTObjectSize.html">GATTObjectSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTObjectSize/Size.html">– Size</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTObjectType.html">GATTObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTPnPID.html">GATTPnPID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTPnPID/VendorIDSource.html">– VendorIDSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTReferenceTimeInformation.html">GATTReferenceTimeInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTReferenceTimeInformation/Day.html">– Day</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTReferenceTimeInformation/Hour.html">– Hour</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTReportReference.html">GATTReportReference</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTReportReference/ReportType.html">– ReportType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTReportReference/Identifier.html">– Identifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTScanIntervalWindow.html">GATTScanIntervalWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSecondaryTimeZone.html">GATTSecondaryTimeZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSecondaryTimeZone/TimeZone.html">– TimeZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSecondaryTimeZone/RelativeInformation.html">– RelativeInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSerialNumberString.html">GATTSerialNumberString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTServerCharacteristicConfiguration.html">GATTServerCharacteristicConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTServerCharacteristicConfiguration/ServerConfiguration.html">– ServerConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSoftwareRevisionString.html">GATTSoftwareRevisionString</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSupportedNewAlertCategory.html">GATTSupportedNewAlertCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSupportedUnreadAlertCategory.html">GATTSupportedUnreadAlertCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTSystemID.html">GATTSystemID</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeAccuracy.html">GATTTimeAccuracy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeBroadcast.html">GATTTimeBroadcast</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeUpdateState.html">GATTTimeUpdateState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeUpdateState/CurrentState.html">– CurrentState</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeUpdateState/Result.html">– Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeWithDst.html">GATTTimeWithDst</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTTimeZone.html">GATTTimeZone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTUncertainty.html">GATTUncertainty</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTUncertainty/Stationary.html">– Stationary</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTUncertainty/UpdateTime.html">– UpdateTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTUncertainty/Precision.html">– Precision</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTUnreadAlertStatus.html">GATTUnreadAlertStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/GATTUserDescription.html">GATTUserDescription</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCI.html">HCI</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCICommandComplete.html">HCICommandComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCICommandHeader.html">HCICommandHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCICommandStatus.html">HCICommandStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIEncryptionChange.html">HCIEncryptionChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIEncryptionChange/EncryptionEnabled.html">– EncryptionEnabled</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIEncryptionKeyRefreshComplete.html">HCIEncryptionKeyRefreshComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIEventHeader.html">HCIEventHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIHoldMode.html">HCIHoldMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIHoldMode/Interval.html">– Interval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIInquiry.html">HCIInquiry</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEAddDeviceToPeriodicAdvertiserList.html">HCILEAddDeviceToPeriodicAdvertiserList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEAddDeviceToResolvingList.html">HCILEAddDeviceToResolvingList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEAddDeviceToWhiteList.html">HCILEAddDeviceToWhiteList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEAdvertisingReport.html">HCILEAdvertisingReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEAdvertisingReport/Report.html">– Report</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEAdvertisingSetTerminated.html">HCILEAdvertisingSetTerminated</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEChannelSelectionAlgorithm.html">HCILEChannelSelectionAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEChannelSelectionAlgorithm/ChannelSelectionAlgorithm.html">– ChannelSelectionAlgorithm</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEConnectionComplete.html">HCILEConnectionComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEConnectionUpdateComplete.html">HCILEConnectionUpdateComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILECreateConnection.html">HCILECreateConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILECreateConnection/InitiatorFilterPolicy.html">– InitiatorFilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEDataLengthChange.html">HCILEDataLengthChange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEDirectedAdvertisingReport.html">HCILEDirectedAdvertisingReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEDirectedAdvertisingReport/Report.html">– Report</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEDirectedAdvertisingReport/AddressType.html">– AddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEncrypt.html">HCILEEncrypt</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEncryptReturn.html">HCILEEncryptReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEnhancedConnectionComplete.html">HCILEEnhancedConnectionComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEnhancedReceiverTest.html">HCILEEnhancedReceiverTest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEnhancedReceiverTest/Phy.html">– Phy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEnhancedReceiverTest/ModulationIndex.html">– ModulationIndex</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEnhancedTransmitterTest.html">HCILEEnhancedTransmitterTest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEEnhancedTransmitterTest/Phy.html">– Phy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport.html">HCILEExtendedAdvertisingReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport/Report.html">– Report</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport/PeriodicAdvertisingInterval.html">– PeriodicAdvertisingInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport/SecondaryPHY.html">– SecondaryPHY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport/PrimaryPHY.html">– PrimaryPHY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport/AddressType.html">– AddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedAdvertisingReport/EventType.html">– EventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedCreateConnection.html">HCILEExtendedCreateConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedCreateConnection/InitialingFilterPolicy.html">– InitialingFilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedCreateConnection/OwnAddressType.html">– OwnAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedCreateConnection/InitialingPHYType.html">– InitialingPHYType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedCreateConnection/InitialingPHY.html">– InitialingPHY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEExtendedCreateConnection/CELength.html">– CELength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEGenerateDHKey.html">HCILEGenerateDHKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEGenerateDHKeyComplete.html">HCILEGenerateDHKeyComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILELongTermKeyRequest.html">HCILELongTermKeyRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILELongTermKeyRequestNegativeReply.html">HCILELongTermKeyRequestNegativeReply</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILELongTermKeyRequestNegativeReplyReturn.html">HCILELongTermKeyRequestNegativeReplyReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILELongTermKeyRequestReply.html">HCILELongTermKeyRequestReply</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILELongTermKeyRequestReplyReturn.html">HCILELongTermKeyRequestReplyReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingCreateSync.html">HCILEPeriodicAdvertisingCreateSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingCreateSync/SyncTimeout.html">– SyncTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingCreateSync/AdvertisingAddressType.html">– AdvertisingAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingCreateSync/FilterPolicy.html">– FilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingReport.html">HCILEPeriodicAdvertisingReport</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingReport/DataStatus.html">– DataStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingSyncEstablished.html">HCILEPeriodicAdvertisingSyncEstablished</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingSyncEstablished/AdvertiserPhy.html">– AdvertiserPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingSyncEstablished/PeriodicAdvertisingInterval.html">– PeriodicAdvertisingInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingSyncLost.html">HCILEPeriodicAdvertisingSyncLost</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPeriodicAdvertisingTerminateSync.html">HCILEPeriodicAdvertisingTerminateSync</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEPhyUpdateComplete.html">HCILEPhyUpdateComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERandom.html">HCILERandom</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadAdvertisingChannelTxPower.html">HCILEReadAdvertisingChannelTxPower</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadAdvertisingChannelTxPower/TransmitPowerLevel.html">– TransmitPowerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadBufferSize.html">HCILEReadBufferSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadChannelMap.html">HCILEReadChannelMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadChannelMapReturnParameter.html">HCILEReadChannelMapReturnParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadLocalP256PublicKeyComplete.html">HCILEReadLocalP256PublicKeyComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadLocalResolvableAddress.html">HCILEReadLocalResolvableAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadLocalResolvableAddressReturn.html">HCILEReadLocalResolvableAddressReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadLocalSupportedFeatures.html">HCILEReadLocalSupportedFeatures</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadMaximumAdvertisingDataLength.html">HCILEReadMaximumAdvertisingDataLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadMaximumDataLength.html">HCILEReadMaximumDataLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadMaximumDataLength/SupportedMaxRxTime.html">– SupportedMaxRxTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadMaximumDataLength/SupportedMaxRxOctets.html">– SupportedMaxRxOctets</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadNumberOfSupportedAdvertisingSets.html">HCILEReadNumberOfSupportedAdvertisingSets</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadPHY.html">HCILEReadPHY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadPHYReturn.html">HCILEReadPHYReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadPeerResolvableAddress.html">HCILEReadPeerResolvableAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadPeerResolvableAddressReturn.html">HCILEReadPeerResolvableAddressReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadPeriodicAdvertisingListSize.html">HCILEReadPeriodicAdvertisingListSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadRemoteUsedFeatures.html">HCILEReadRemoteUsedFeatures</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadRemoteUsedFeaturesComplete.html">HCILEReadRemoteUsedFeaturesComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadResolvingListSize.html">HCILEReadResolvingListSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadRfPathCompensation.html">HCILEReadRfPathCompensation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadSuggestedDefaultDataLength.html">HCILEReadSuggestedDefaultDataLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadSupportedStates.html">HCILEReadSupportedStates</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadTransmitPower.html">HCILEReadTransmitPower</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadTransmitPower/TxPower.html">– TxPower</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReadWhiteListSize.html">HCILEReadWhiteListSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEReceiverTest.html">HCILEReceiverTest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoteConnectionParameterRequest.html">HCILERemoteConnectionParameterRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoteConnectionParameterRequestNegativeReply.html">HCILERemoteConnectionParameterRequestNegativeReply</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoteConnectionParameterRequestNegativeReplyReturn.html">HCILERemoteConnectionParameterRequestNegativeReplyReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoteConnectionParameterRequestReply.html">HCILERemoteConnectionParameterRequestReply</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoteConnectionParameterRequestReplyReturn.html">HCILERemoteConnectionParameterRequestReplyReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoveAdvertisingSet.html">HCILERemoveAdvertisingSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoveDeviceFromResolvingList.html">HCILERemoveDeviceFromResolvingList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoveDeviceFromWhiteList.html">HCILERemoveDeviceFromWhiteList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILERemoveDeviceToPeriodicAdvertiserList.html">HCILERemoveDeviceToPeriodicAdvertiserList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEScanRequestReceived.html">HCILEScanRequestReceived</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAddressResolutionEnable.html">HCILESetAddressResolutionEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAddressResolutionEnable/AddressResolutionEnable.html">– AddressResolutionEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertiseEnable.html">HCILESetAdvertiseEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertisingData.html">HCILESetAdvertisingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertisingParameters.html">HCILESetAdvertisingParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertisingParameters/AdvertisingType.html">– AdvertisingType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertisingParameters/ChannelMap.html">– ChannelMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertisingParameters/FilterPolicy.html">– FilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetAdvertisingSetRandomAddress.html">HCILESetAdvertisingSetRandomAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetDataLength.html">HCILESetDataLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetDataLengthReturn.html">HCILESetDataLengthReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetDefaultPhy.html">HCILESetDefaultPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetEventMask.html">HCILESetEventMask</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetEventMask/Event.html">– Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingData.html">HCILESetExtendedAdvertisingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingData/Operation.html">– Operation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters.html">HCILESetExtendedAdvertisingParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/ScanRequestNotificationEnable.html">– ScanRequestNotificationEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/SecondaryAdvertisingPhy.html">– SecondaryAdvertisingPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/PrimaryAdvertisingPhy.html">– PrimaryAdvertisingPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/AdvertisingFilterPolicy.html">– AdvertisingFilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/PeerAddressType.html">– PeerAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/OwnAddressType.html">– OwnAddressType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/PrimaryAdvertisingChannelMap.html">– PrimaryAdvertisingChannelMap</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/PrimaryAdvertisingInterval.html">– PrimaryAdvertisingInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParameters/AdvertisingEventProperties.html">– AdvertisingEventProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedAdvertisingParametersReturn.html">HCILESetExtendedAdvertisingParametersReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanEnable.html">HCILESetExtendedScanEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanEnable/Enable.html">– Enable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanEnable/FilterDuplicates.html">– FilterDuplicates</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanEnable/Duration.html">– Duration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanEnable/Period.html">– Period</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanParameters.html">HCILESetExtendedScanParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanParameters/ScanningFilterPolicy.html">– ScanningFilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanParameters/ScanningPHYType.html">– ScanningPHYType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanParameters/ScanningPHY.html">– ScanningPHY</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanParameters/ScanType.html">– ScanType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanResponseData.html">HCILESetExtendedScanResponseData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetExtendedScanResponseData/Operation.html">– Operation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetHostChannelClassification.html">HCILESetHostChannelClassification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingData.html">HCILESetPeriodicAdvertisingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingData/Operation.html">– Operation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingEnable.html">HCILESetPeriodicAdvertisingEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingEnable/Enable.html">– Enable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingParameters.html">HCILESetPeriodicAdvertisingParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingParameters/PeriodicAdvertisingInterval.html">– PeriodicAdvertisingInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPeriodicAdvertisingParameters/AdvertisingEventProperties.html">– AdvertisingEventProperties</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPhy.html">HCILESetPhy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPrivacyMode.html">HCILESetPrivacyMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetPrivacyMode/PrivacyMode.html">– PrivacyMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetRandomAddress.html">HCILESetRandomAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetResolvablePrivateAddressTimeout.html">HCILESetResolvablePrivateAddressTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetResolvablePrivateAddressTimeout/RPATimeout.html">– RPATimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetScanEnable.html">HCILESetScanEnable</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetScanParameters.html">HCILESetScanParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetScanParameters/ScanType.html">– ScanType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetScanParameters/FilterPolicy.html">– FilterPolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILESetScanResponseData.html">HCILESetScanResponseData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEStartEncryption.html">HCILEStartEncryption</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILETestEnd.html">HCILETestEnd</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILETransmitterTest.html">HCILETransmitterTest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEUpdateConnection.html">HCILEUpdateConnection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEWriteRfPathCompensation.html">HCILEWriteRfPathCompensation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILEWriteSuggestedDefaultDataLength.html">HCILEWriteSuggestedDefaultDataLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILocalVersionInformation.html">HCILocalVersionInformation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCILowEnergyMetaEvent.html">HCILowEnergyMetaEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIReadConnectionAcceptTimeout.html">HCIReadConnectionAcceptTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIReadDeviceAddress.html">HCIReadDeviceAddress</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIReadLocalName.html">HCIReadLocalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIRemoteNameRequest.html">HCIRemoteNameRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIRemoteNameRequestComplete.html">HCIRemoteNameRequestComplete</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCISetEventFilter.html">HCISetEventFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCISetEventFilter/FilterType.html">– FilterType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCISetEventFilter/InquiryResultFilterConditionType.html">– InquiryResultFilterConditionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIWriteConnectionAcceptTimeout.html">HCIWriteConnectionAcceptTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/HCIWriteLocalName.html">HCIWriteLocalName</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyAdvertisingData.html">LowEnergyAdvertisingData</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyConnectionInterval.html">LowEnergyConnectionInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyConnectionIntervalRange.html">LowEnergyConnectionIntervalRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyConnectionLatency.html">LowEnergyConnectionLatency</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyConnectionLength.html">LowEnergyConnectionLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyMaxTxOctets.html">LowEnergyMaxTxOctets</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyMaxTxTime.html">LowEnergyMaxTxTime</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyRfRxPathCompensationValue.html">LowEnergyRfRxPathCompensationValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyRfTxPathCompensationValue.html">LowEnergyRfTxPathCompensationValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyRxChannel.html">LowEnergyRxChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyScanInterval.html">LowEnergyScanInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyScanTimeInterval.html">LowEnergyScanTimeInterval</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergySupervisionTimeout.html">LowEnergySupervisionTimeout</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyTxChannel.html">LowEnergyTxChannel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/LowEnergyTxPower.html">LowEnergyTxPower</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/POSIXError.html">POSIXError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/RSSI.html">RSSI</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/SFloat.html">SFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UInt128.html">UInt128</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UInt24.html">UInt24</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UInt256.html">UInt256</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UInt40.html">UInt40</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UInt48.html">UInt48</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UInt512.html">UInt512</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/UnitIdentifier.html">UnitIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VendorCommand.html">VendorCommand</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>HCILESetRandomAddress</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HCILESetRandomAddress</span><span class="p">:</span> <span class="kt"><a href="../Protocols/HCICommandParameter.html">HCICommandParameter</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>LE Set Random Address Command</p>
+
+<p>Used by the Host to set the LE Random Device Address in the Controller.</p>
+
+<p>If this command is used to change the address, the new random address shall take effect for advertising no later than
+the next successful LE Set Advertising Enable Command, for scanning no later than the next successful LE Set Scan Enable Command
+or LE Set Extended Scan Enable Command, and for initiating no later than the next successful LE Create Connection Command
+or LE Extended Create Connection Command.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If Extended Advertising is in use, this command only affects the address used for scanning and initiating.
+The addresses used for advertising are set by the LE Set Advertising Set Random Address command.
+
+</div>
+
+<p>If the Host issues this command when scanning or legacy advertising is enabled, the Controller shall return the error code Command Disallowed (<code>0x0C</code>).</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9Bluetooth21HCILESetRandomAddress7commandOS_19HCILowEnergyCommand"></a>
+                    <a name="//apple_ref/swift/Variable/command" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9Bluetooth21HCILESetRandomAddress7commandOS_19HCILowEnergyCommand">command</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">command</span> <span class="o">=</span> <span class="kt"><a href="../Enums/HCILowEnergyCommand.html">HCILowEnergyCommand</a></span><span class="o">.</span><span class="n">setRandomAddress</span> <span class="c1">// 0x0005</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9Bluetooth21HCILESetRandomAddress6lengthSi"></a>
+                    <a name="//apple_ref/swift/Variable/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9Bluetooth21HCILESetRandomAddress6lengthSi">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">length</span> <span class="o">=</span> <span class="mi">6</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV9Bluetooth21HCILESetRandomAddress7addressVS_7Address"></a>
+                    <a name="//apple_ref/swift/Property/address" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV9Bluetooth21HCILESetRandomAddress7addressVS_7Address">address</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV9Bluetooth21HCILESetRandomAddresscFT7addressVS_7Address_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV9Bluetooth21HCILESetRandomAddresscFT7addressVS_7Address_S0_">init(address:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vP9Bluetooth19HCICommandParameter4dataV10Foundation4Data"></a>
+                    <a name="//apple_ref/swift/Property/data" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vP9Bluetooth19HCICommandParameter4dataV10Foundation4Data">data</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-07-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
