@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ATTConnection Class Reference</title>
+    <title>BluetoothAddress Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -14,9 +14,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Class/ATTConnection" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Struct/BluetoothAddress" class="dashAnchor"></a>
 
-    <a title="ATTConnection Class Reference"></a>
+    <a title="BluetoothAddress Structure Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -44,7 +44,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">Bluetooth Reference</a>
       <img class="carat" src="../img/carat.png" />
-      ATTConnection Class Reference
+      BluetoothAddress Structure Reference
     </p>
 
     <div class="content-wrapper">
@@ -53,9 +53,6 @@
           <li class="nav-group-name">
             <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/ATTConnection.html">ATTConnection</a>
-              </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/GATTClient.html">GATTClient</a>
               </li>
@@ -101,13 +98,7 @@
                 <a class="nav-group-task-link" href="../Enums/ATTOpcodeType.html">ATTOpcodeType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/ATTResponse.html">ATTResponse</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/AdvertisingChannelHeader.html">AdvertisingChannelHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnyATTResponse.html">AnyATTResponse</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/BluetoothHostControllerError.html">BluetoothHostControllerError</a>
@@ -551,9 +542,6 @@
                 <a class="nav-group-task-link" href="../Structs/ATTWriteResponse.html">ATTWriteResponse</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Address.html">Address</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AdvertisingInterval.html">AdvertisingInterval</a>
               </li>
               <li class="nav-group-task">
@@ -561,6 +549,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BitMaskOptionSet.html">BitMaskOptionSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BluetoothAddress.html">BluetoothAddress</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/ClassOfDevice.html">ClassOfDevice</a>
@@ -2140,6 +2131,9 @@
             <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9Bluetooth7Addressa">Address</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:9Bluetooth21HCIOpcodeCommandFielda">HCIOpcodeCommandField</a>
               </li>
               <li class="nav-group-task">
@@ -2156,20 +2150,84 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>ATTConnection</h1>
+            <h1>BluetoothAddress</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">ATTConnection</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BluetoothAddress</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ByteValue.html">ByteValue</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Manages a Bluetooth connection using the ATT protocol.</p>
+            <p>Bluetooth address.</p>
 
           </div>
         </section>
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ByteValueType"></a>
+                <a name="//apple_ref/swift/Section/ByteValueType" class="dashAnchor"></a>
+                <a href="#/ByteValueType">
+                  <h3 class="section-name">ByteValueType</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV9ByteValuea"></a>
+                    <a name="//apple_ref/swift/Alias/ByteValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV9ByteValuea">ByteValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Raw Bluetooth Address 6 byte (48 bit) value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">ByteValue</span> <span class="o">=</span> <span class="p">(</span><span class="kt">UInt8</span><span class="p">,</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="kt">UInt8</span><span class="p">,</span> <span class="kt">UInt8</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth9ByteValueP8bitWidthSivpZ"></a>
+                    <a name="//apple_ref/swift/Variable/bitWidth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth9ByteValueP8bitWidthSivpZ">bitWidth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">bitWidth</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Properties"></a>
@@ -2182,9 +2240,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC23maximumTransmissionUnitAA010ATTMaximumdE0Vvp"></a>
-                    <a name="//apple_ref/swift/Property/maximumTransmissionUnit" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC23maximumTransmissionUnitAA010ATTMaximumdE0Vvp">maximumTransmissionUnit</a>
+                    <a name="/s:9Bluetooth0A7AddressV5bytess5UInt8V_A5Ftvp"></a>
+                    <a name="//apple_ref/swift/Property/bytes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV5bytess5UInt8V_A5Ftvp">bytes</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2192,95 +2250,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Actual number of bytes for PDU ATT exchange.</p>
+                        <p>Underlying address bytes (host endianess).</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maximumTransmissionUnit</span><span class="p">:</span> <span class="kt"><a href="../Structs/ATTMaximumTransmissionUnit.html">ATTMaximumTransmissionUnit</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC6socketAA19L2CAPSocketProtocol_pvp"></a>
-                    <a name="//apple_ref/swift/Property/socket" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC6socketAA19L2CAPSocketProtocol_pvp">socket</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">socket</span><span class="p">:</span> <span class="kt"><a href="../Protocols/L2CAPSocketProtocol.html">L2CAPSocketProtocol</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC3logySScSgvp"></a>
-                    <a name="//apple_ref/swift/Property/log" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC3logySScSgvp">log</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">log</span><span class="p">:</span> <span class="p">((</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC12writePendingyycSgvp"></a>
-                    <a name="//apple_ref/swift/Property/writePending" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC12writePendingyycSgvp">writePending</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">writePending</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bytes</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html#/s:9Bluetooth0A7AddressV9ByteValuea">ByteValue</a></span></code></pre>
 
                         </div>
                       </div>
@@ -2301,9 +2278,132 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC6socketAcA19L2CAPSocketProtocol_p_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(socket:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC6socketAcA19L2CAPSocketProtocol_p_tcfc">init(socket:)</a>
+                    <a name="/s:9Bluetooth0A7AddressV5bytesACs5UInt8V_A5Ft_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(bytes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV5bytesACs5UInt8V_A5Ft_tcfc">init(bytes:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize with the specifed bytes (in host endianess).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">bytes</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html#/s:9Bluetooth0A7AddressV9ByteValuea">ByteValue</a></span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV3minACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/min" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV3minACvpZ">min</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The minimum representable value in this type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">min</span><span class="p">:</span> <span class="kt">BluetoothAddress</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV3maxACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/max" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV3maxACvpZ">max</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum representable value in this type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">max</span><span class="p">:</span> <span class="kt">BluetoothAddress</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV4zeroACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/zero" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV4zeroACvpZ">zero</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A zero address.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">zero</span><span class="p">:</span> <span class="kt">BluetoothAddress</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Data"></a>
+                <a name="//apple_ref/swift/Section/Data" class="dashAnchor"></a>
+                <a href="#/Data">
+                  <h3 class="section-name">Data</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV4dataACSg10Foundation4DataV_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV4dataACSg10Foundation4DataV_tcfc">init(data:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2318,45 +2418,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">socket</span><span class="p">:</span> <span class="kt"><a href="../Protocols/L2CAPSocketProtocol.html">L2CAPSocketProtocol</a></span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Methods"></a>
-                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods">
-                  <h3 class="section-name">Methods</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC4readSbyKF"></a>
-                    <a name="//apple_ref/swift/Method/read()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC4readSbyKF">read()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Performs the actual IO for recieving data.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -2366,193 +2428,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC5writeSbyKF"></a>
-                    <a name="//apple_ref/swift/Method/write()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC5writeSbyKF">write()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Performs the actual IO for sending data.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC8registerySuyxcAA19ATTProtocolDataUnitRzlF"></a>
-                    <a name="//apple_ref/swift/Method/register(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC8registerySuyxcAA19ATTProtocolDataUnitRzlF">register(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Registers a callback for an opcode and returns the ID associated with that callback.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">register</span> <span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ATTProtocolDataUnit.html">ATTProtocolDataUnit</a></span><span class="o">&gt;</span> <span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC10unregisterySbSuF"></a>
-                    <a name="//apple_ref/swift/Method/unregister(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC10unregisterySbSuF">unregister(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Unregisters the callback associated with the specified identifier.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">unregister</span><span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Whether the callback was unregistered.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC13unregisterAllyyF"></a>
-                    <a name="//apple_ref/swift/Method/unregisterAll()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC13unregisterAllyyF">unregisterAll()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Registers all callbacks.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unregisterAll</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC4send5error6opcode6handle8responseSuSgAA8ATTErrorO_AA9ATTOpcodeOs6UInt16VyAA0H8ResponseVcSgtF"></a>
-                    <a name="//apple_ref/swift/Method/send(error:opcode:handle:response:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC4send5error6opcode6handle8responseSuSgAA8ATTErrorO_AA9ATTOpcodeOs6UInt16VyAA0H8ResponseVcSgtF">send(error:opcode:handle:response:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sends an error.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/ATT.html">ATT</a></span><span class="o">.</span><span class="kt"><a href="../Classes/ATTConnection.html#/s:9Bluetooth13ATTConnectionC5Errora">Error</a></span><span class="p">,</span> <span class="nv">opcode</span><span class="p">:</span> <span class="kt"><a href="../Enums/ATTOpcode.html">ATTOpcode</a></span><span class="p">,</span> <span class="nv">handle</span><span class="p">:</span> <span class="kt">UInt16</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">response</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Structs/ATTErrorResponse.html">ATTErrorResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC4send_8responseSuSgx_yAA14AnyATTResponseOc8callback_AA19ATTProtocolDataUnit_pXptSgtAaJRzlF"></a>
-                    <a name="//apple_ref/swift/Method/send(_:response:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC4send_8responseSuSgx_yAA14AnyATTResponseOc8callback_AA19ATTProtocolDataUnit_pXptSgtAaJRzlF">send(_:response:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Adds a PDU to the queue to send.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="n">send</span> <span class="o">&lt;</span><span class="kt">PDU</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ATTProtocolDataUnit.html">ATTProtocolDataUnit</a></span><span class="o">&gt;</span> <span class="p">(</span><span class="n">_</span> <span class="nv">pdu</span><span class="p">:</span> <span class="kt">PDU</span><span class="p">,</span> <span class="nv">response</span><span class="p">:</span> <span class="p">(</span><span class="nv">callback</span><span class="p">:</span> <span class="p">(</span><span class="kt"><a href="../Classes/ATTConnection.html#/s:9Bluetooth13ATTConnectionC11AnyResponsea">AnyResponse</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(),</span> <span class="kt"><a href="../Protocols/ATTProtocolDataUnit.html">ATTProtocolDataUnit</a></span><span class="o">.</span><span class="k">Type</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UInt</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Identifier of queued send operation or <code>nil</code> if the PDU cannot be sent.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Supporting%20Types"></a>
-                <a name="//apple_ref/swift/Section/Supporting Types" class="dashAnchor"></a>
-                <a href="#/Supporting%20Types">
-                  <h3 class="section-name">Supporting Types</h3>
-                </a>
-              </div>
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC5Errora"></a>
-                    <a name="//apple_ref/swift/Alias/Error" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC5Errora">Error</a>
+                    <a name="/s:9Bluetooth0A7AddressV4data10Foundation4DataVvp"></a>
+                    <a name="//apple_ref/swift/Property/data" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV4data10Foundation4DataVvp">data</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2567,7 +2445,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">typealias</span> <span class="kt">Error</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ATTConnectionError.html">ATTConnectionError</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2578,19 +2456,19 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Supporting%20Types2"></a>
-                <a name="//apple_ref/swift/Section/Supporting Types" class="dashAnchor"></a>
-                <a href="#/Supporting%20Types2">
-                  <h3 class="section-name">Supporting Types</h3>
+                <a name="/Byte%20Swap"></a>
+                <a name="//apple_ref/swift/Section/Byte Swap" class="dashAnchor"></a>
+                <a href="#/Byte%20Swap">
+                  <h3 class="section-name">Byte Swap</h3>
                 </a>
               </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth13ATTConnectionC11AnyResponsea"></a>
-                    <a name="//apple_ref/swift/Alias/AnyResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth13ATTConnectionC11AnyResponsea">AnyResponse</a>
+                    <a name="/s:9Bluetooth0A7AddressV11byteSwappedACvp"></a>
+                    <a name="//apple_ref/swift/Property/byteSwapped" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV11byteSwappedACvp">byteSwapped</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2598,14 +2476,190 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A representation of this address with the byte order swapped.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">AnyResponse</span> <span class="o">=</span> <span class="kt"><a href="../Enums/AnyATTResponse.html">AnyATTResponse</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">byteSwapped</span><span class="p">:</span> <span class="kt">BluetoothAddress</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RawRepresentable"></a>
+                <a name="//apple_ref/swift/Section/RawRepresentable" class="dashAnchor"></a>
+                <a href="#/RawRepresentable">
+                  <h3 class="section-name">RawRepresentable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV8rawValueACSgSS_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(rawValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV8rawValueACSgSS_tcfc">init(rawValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize a Bluetooth Address from its big endian string representation (e.g. <code>00:1A:7D:DA:71:13</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9Bluetooth0A7AddressV8rawValueSSvp"></a>
+                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV8rawValueSSvp">rawValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convert a Bluetooth Address to its big endian string representation (e.g. <code>00:1A:7D:DA:71:13</code>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rawValue</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Equatable"></a>
+                <a name="//apple_ref/swift/Section/Equatable" class="dashAnchor"></a>
+                <a href="#/Equatable">
+                  <h3 class="section-name">Equatable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SQ2eeoiySbx_xtFZ"></a>
+                    <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt">BluetoothAddress</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt">BluetoothAddress</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Hashable"></a>
+                <a name="//apple_ref/swift/Section/Hashable" class="dashAnchor"></a>
+                <a href="#/Hashable">
+                  <h3 class="section-name">Hashable</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SH9hashValueSivp"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SH9hashValueSivp">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hashValue</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CustomStringConvertible"></a>
+                <a name="//apple_ref/swift/Section/CustomStringConvertible" class="dashAnchor"></a>
+                <a href="#/CustomStringConvertible">
+                  <h3 class="section-name">CustomStringConvertible</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:s23CustomStringConvertibleP11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2620,7 +2674,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-10-31)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-11-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

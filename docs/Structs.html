@@ -54,9 +54,6 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/ATTConnection.html">ATTConnection</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/GATTClient.html">GATTClient</a>
               </li>
               <li class="nav-group-task">
@@ -101,13 +98,7 @@
                 <a class="nav-group-task-link" href="Enums/ATTOpcodeType.html">ATTOpcodeType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/ATTResponse.html">ATTResponse</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/AdvertisingChannelHeader.html">AdvertisingChannelHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/AnyATTResponse.html">AnyATTResponse</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/BluetoothHostControllerError.html">BluetoothHostControllerError</a>
@@ -551,9 +542,6 @@
                 <a class="nav-group-task-link" href="Structs/ATTWriteResponse.html">ATTWriteResponse</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/Address.html">Address</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/AdvertisingInterval.html">AdvertisingInterval</a>
               </li>
               <li class="nav-group-task">
@@ -561,6 +549,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/BitMaskOptionSet.html">BitMaskOptionSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BluetoothAddress.html">BluetoothAddress</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ClassOfDevice.html">ClassOfDevice</a>
@@ -2140,6 +2131,9 @@
             <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:9Bluetooth7Addressa">Address</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:9Bluetooth21HCIOpcodeCommandFielda">HCIOpcodeCommandField</a>
               </li>
               <li class="nav-group-task">
@@ -3168,9 +3162,9 @@ and acknowledges that the attribute has been successfully written.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth7AddressV"></a>
-                    <a name="//apple_ref/swift/Struct/Address" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth7AddressV">Address</a>
+                    <a name="/s:9Bluetooth0A7AddressV"></a>
+                    <a name="//apple_ref/swift/Struct/BluetoothAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9Bluetooth0A7AddressV">BluetoothAddress</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -3180,13 +3174,13 @@ and acknowledges that the attribute has been successfully written.</p>
                       <div class="abstract">
                         <p>Bluetooth address.</p>
 
-                        <a href="Structs/Address.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/BluetoothAddress.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Address</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ByteValue.html">ByteValue</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BluetoothAddress</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ByteValue.html">ByteValue</a></span></code></pre>
 
                         </div>
                       </div>
@@ -5513,7 +5507,7 @@ Bit 2, meaning <q>Display Alert Status</q></p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAltitude</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAltitude</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -5552,7 +5546,7 @@ Bit 2, meaning <q>Display Alert Status</q></p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnaerobicHeartRateLowerLimit</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnaerobicHeartRateLowerLimit</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -5591,7 +5585,7 @@ Bit 2, meaning <q>Display Alert Status</q></p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnaerobicHeartRateUpperLimit</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnaerobicHeartRateUpperLimit</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -5630,7 +5624,7 @@ Bit 2, meaning <q>Display Alert Status</q></p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnalog</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnalog</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -5669,7 +5663,7 @@ Bit 2, meaning <q>Display Alert Status</q></p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnalogOutput</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTAnalogOutput</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -6365,7 +6359,7 @@ and ignored upon receipt.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTCharacteristicFormatType</span> <span class="p">:</span> <span class="kt">RawRepresentable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTCharacteristicFormatType</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -7364,7 +7358,7 @@ The minimum length of “UTF-8 string” is 0 octets and maximum length of “UT
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTNumberOfDigitals</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTDescriptor.html">GATTDescriptor</a></span><span class="p">,</span> <span class="kt">RawRepresentable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTNumberOfDigitals</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTDescriptor.html">GATTDescriptor</a></span><span class="p">,</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -7599,7 +7593,7 @@ Strings which consist of more than one character are transmitted in the followin
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTReferenceTimeInformation</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTReferenceTimeInformation</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -8036,7 +8030,7 @@ The value 0x03 is interpreted that this server supports “Simple Alert” and �
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeBroadcast</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeBroadcast</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -8073,7 +8067,7 @@ The value 0x03 is interpreted that this server supports “Simple Alert” and �
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeUpdateState</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeUpdateState</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -8110,7 +8104,7 @@ The value 0x03 is interpreted that this server supports “Simple Alert” and �
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeWithDst</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeWithDst</span> <span class="p">:</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                         </div>
                       </div>
@@ -8150,7 +8144,7 @@ The offset defined in this characteristic is constant, regardless whether daylig
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeZone</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">GATTTimeZone</span> <span class="p">:</span> <span class="kt">RawRepresentable</span><span class="p">,</span> <span class="kt"><a href="Protocols/GATTCharacteristic.html">GATTCharacteristic</a></span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -16898,7 +16892,7 @@ Units: dBm</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-10-31)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-11-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

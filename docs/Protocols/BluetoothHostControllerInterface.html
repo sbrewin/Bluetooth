@@ -54,9 +54,6 @@
             <a class="nav-group-name-link" href="../Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Classes/ATTConnection.html">ATTConnection</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/GATTClient.html">GATTClient</a>
               </li>
               <li class="nav-group-task">
@@ -101,13 +98,7 @@
                 <a class="nav-group-task-link" href="../Enums/ATTOpcodeType.html">ATTOpcodeType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/ATTResponse.html">ATTResponse</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/AdvertisingChannelHeader.html">AdvertisingChannelHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Enums/AnyATTResponse.html">AnyATTResponse</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/BluetoothHostControllerError.html">BluetoothHostControllerError</a>
@@ -551,9 +542,6 @@
                 <a class="nav-group-task-link" href="../Structs/ATTWriteResponse.html">ATTWriteResponse</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Structs/Address.html">Address</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AdvertisingInterval.html">AdvertisingInterval</a>
               </li>
               <li class="nav-group-task">
@@ -561,6 +549,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/BitMaskOptionSet.html">BitMaskOptionSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/BluetoothAddress.html">BluetoothAddress</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/ClassOfDevice.html">ClassOfDevice</a>
@@ -2140,6 +2131,9 @@
             <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:9Bluetooth7Addressa">Address</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:9Bluetooth21HCIOpcodeCommandFielda">HCIOpcodeCommandField</a>
               </li>
               <li class="nav-group-task">
@@ -2159,7 +2153,7 @@
             <h1>BluetoothHostControllerInterface</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BluetoothHostControllerInterface</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BluetoothHostControllerInterface</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
 
                 </div>
               </div>
@@ -2202,9 +2196,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfaceP7addressAA7AddressVvp"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfaceP7addressAA0A7AddressVvp"></a>
                     <a name="//apple_ref/swift/Property/address" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfaceP7addressAA7AddressVvp">address</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfaceP7addressAA0A7AddressVvp">address</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2212,14 +2206,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The Bluetooth Address of the controller.</p>
+                        <p>The Address of the controller.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -2510,9 +2504,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16acceptConnection7address4role7timeoutyAA7AddressV_AA09HCIAcceptF7RequestV4RoleOAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16acceptConnection7address4role7timeoutyAA0A7AddressV_AA09HCIAcceptF7RequestV4RoleOAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/acceptConnection(address:role:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16acceptConnection7address4role7timeoutyAA7AddressV_AA09HCIAcceptF7RequestV4RoleOAA17HCICommandTimeoutVtKF">acceptConnection(address:role:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16acceptConnection7address4role7timeoutyAA0A7AddressV_AA09HCIAcceptF7RequestV4RoleOAA17HCICommandTimeoutVtKF">acceptConnection(address:role:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -2532,7 +2526,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">acceptConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">acceptConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                       <span class="nv">role</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIAcceptConnectionRequest.html">HCIAcceptConnectionRequest</a></span><span class="o">.</span><span class="kt">Role</span><span class="p">,</span>
                       <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
@@ -2649,9 +2643,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16createConnection7address10packetType22pageScanRepetitionMode11clockOffset15allowRoleSwitch7timeoutAA21HCIConnectionCompleteVAA7AddressV_s6UInt16VAA04PageklM0VAA16BitMaskOptionSetVyAA09HCICreateF0V05ClockO0OGAV05AllowqR0OAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16createConnection7address10packetType22pageScanRepetitionMode11clockOffset15allowRoleSwitch7timeoutAA21HCIConnectionCompleteVAA0A7AddressV_s6UInt16VAA04PageklM0VAA16BitMaskOptionSetVyAA09HCICreateF0V05ClockO0OGAV05AllowqR0OAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/createConnection(address:packetType:pageScanRepetitionMode:clockOffset:allowRoleSwitch:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16createConnection7address10packetType22pageScanRepetitionMode11clockOffset15allowRoleSwitch7timeoutAA21HCIConnectionCompleteVAA7AddressV_s6UInt16VAA04PageklM0VAA16BitMaskOptionSetVyAA09HCICreateF0V05ClockO0OGAV05AllowqR0OAA17HCICommandTimeoutVtKF">createConnection(address:packetType:pageScanRepetitionMode:clockOffset:allowRoleSwitch:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16createConnection7address10packetType22pageScanRepetitionMode11clockOffset15allowRoleSwitch7timeoutAA21HCIConnectionCompleteVAA0A7AddressV_s6UInt16VAA04PageklM0VAA16BitMaskOptionSetVyAA09HCICreateF0V05ClockO0OGAV05AllowqR0OAA17HCICommandTimeoutVtKF">createConnection(address:packetType:pageScanRepetitionMode:clockOffset:allowRoleSwitch:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -2671,7 +2665,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                       <span class="nv">packetType</span><span class="p">:</span> <span class="kt">UInt16</span><span class="p">,</span>
                       <span class="nv">pageScanRepetitionMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/PageScanRepetitionMode.html">PageScanRepetitionMode</a></span><span class="p">,</span>
                       <span class="nv">clockOffset</span><span class="p">:</span> <span class="kt"><a href="../Structs/BitMaskOptionSet.html">BitMaskOptionSet</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/HCICreateConnection.html">HCICreateConnection</a></span><span class="o">.</span><span class="kt">ClockOffset</span><span class="o">&gt;</span><span class="p">,</span>
@@ -2697,9 +2691,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16cancelConnection7address7timeoutyAA7AddressV_AA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16cancelConnection7address7timeoutyAA0A7AddressV_AA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/cancelConnection(address:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16cancelConnection7address7timeoutyAA7AddressV_AA17HCICommandTimeoutVtKF">cancelConnection(address:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16cancelConnection7address7timeoutyAA0A7AddressV_AA17HCICommandTimeoutVtKF">cancelConnection(address:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -2719,7 +2713,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancelConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cancelConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                       <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
@@ -2741,9 +2735,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE19deleteStoredLinkKey7address0E4Flag7timeoutAA09HCIDeletefgH6ReturnVAA7AddressV_AA0lfgH0V06DeleteJ0OAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE19deleteStoredLinkKey7address0E4Flag7timeoutAA09HCIDeletefgH6ReturnVAA0A7AddressV_AA0lfgH0V06DeleteJ0OAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/deleteStoredLinkKey(address:deleteFlag:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE19deleteStoredLinkKey7address0E4Flag7timeoutAA09HCIDeletefgH6ReturnVAA7AddressV_AA0lfgH0V06DeleteJ0OAA17HCICommandTimeoutVtKF">deleteStoredLinkKey(address:deleteFlag:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE19deleteStoredLinkKey7address0E4Flag7timeoutAA09HCIDeletefgH6ReturnVAA0A7AddressV_AA0lfgH0V06DeleteJ0OAA17HCICommandTimeoutVtKF">deleteStoredLinkKey(address:deleteFlag:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -2763,7 +2757,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteStoredLinkKey</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteStoredLinkKey</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                          <span class="nv">deleteFlag</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIDeleteStoredLinkKey.html">HCIDeleteStoredLinkKey</a></span><span class="o">.</span><span class="kt">DeleteFlag</span><span class="p">,</span>
                          <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/HCIDeleteStoredLinkKeyReturn.html">HCIDeleteStoredLinkKeyReturn</a></span></code></pre>
 
@@ -2874,9 +2868,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE24ioCapabilityRequestReply7address0eF014obbDataPresent26authenticationRequirements7timeoutAA7AddressVAK_AA015HCIIOCapabilitygH0V12IOCapabilityOAM07OBBDataL0OAM014AuthenticationN0OAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE24ioCapabilityRequestReply7address0eF014obbDataPresent26authenticationRequirements7timeoutAA0A7AddressVAK_AA015HCIIOCapabilitygH0V12IOCapabilityOAM07OBBDataL0OAM014AuthenticationN0OAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/ioCapabilityRequestReply(address:ioCapability:obbDataPresent:authenticationRequirements:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE24ioCapabilityRequestReply7address0eF014obbDataPresent26authenticationRequirements7timeoutAA7AddressVAK_AA015HCIIOCapabilitygH0V12IOCapabilityOAM07OBBDataL0OAM014AuthenticationN0OAA17HCICommandTimeoutVtKF">ioCapabilityRequestReply(address:ioCapability:obbDataPresent:authenticationRequirements:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE24ioCapabilityRequestReply7address0eF014obbDataPresent26authenticationRequirements7timeoutAA0A7AddressVAK_AA015HCIIOCapabilitygH0V12IOCapabilityOAM07OBBDataL0OAM014AuthenticationN0OAA17HCICommandTimeoutVtKF">ioCapabilityRequestReply(address:ioCapability:obbDataPresent:authenticationRequirements:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -2899,11 +2893,11 @@ The OOB_Data_Present parameter shall be set to <q>OOB authentication data from r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">ioCapabilityRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">ioCapabilityRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                               <span class="nv">ioCapability</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIIOCapabilityRequestReply.html">HCIIOCapabilityRequestReply</a></span><span class="o">.</span><span class="kt">IOCapability</span><span class="p">,</span>
                               <span class="nv">obbDataPresent</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIIOCapabilityRequestReply.html">HCIIOCapabilityRequestReply</a></span><span class="o">.</span><span class="kt">OBBDataPresent</span><span class="p">,</span>
                               <span class="nv">authenticationRequirements</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIIOCapabilityRequestReply.html">HCIIOCapabilityRequestReply</a></span><span class="o">.</span><span class="kt">AuthenticationRequirements</span><span class="p">,</span>
-                              <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span></code></pre>
+                              <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span></code></pre>
 
                         </div>
                       </div>
@@ -3015,9 +3009,9 @@ The tester generates the test reference packets.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE33addDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA09LowEnergyilM0O_AA0L0Vs5UInt8VAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE33addDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA09LowEnergyilM0O_AA0aL0Vs5UInt8VAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/addDeviceToPeriodicAdvertiserList(advertiserAddressType:address:advertisingSid:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE33addDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA09LowEnergyilM0O_AA0L0Vs5UInt8VAA17HCICommandTimeoutVtKF">addDeviceToPeriodicAdvertiserList(advertiserAddressType:address:advertisingSid:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE33addDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA09LowEnergyilM0O_AA0aL0Vs5UInt8VAA17HCICommandTimeoutVtKF">addDeviceToPeriodicAdvertiserList(advertiserAddressType:address:advertisingSid:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -3038,7 +3032,7 @@ The tester generates the test reference packets.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addDeviceToPeriodicAdvertiserList</span><span class="p">(</span><span class="nv">advertiserAddressType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LowEnergyAdvertiserAddressType.html">LowEnergyAdvertiserAddressType</a></span><span class="p">,</span>
-                                       <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                                       <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                                        <span class="nv">advertisingSid</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span>
                                        <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span>  <span class="k">throws</span></code></pre>
 
@@ -3148,9 +3142,9 @@ used to resolve Resolvable Private Addresses in the Controller.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergyCreateConnection7address4type14ownAddressType7timeouts6UInt16VAA0L0V_AA03LowflM0OAnA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergyCreateConnection7address4type14ownAddressType7timeouts6UInt16VAA0aL0V_AA03LowflM0OAnA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/lowEnergyCreateConnection(address:type:ownAddressType:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergyCreateConnection7address4type14ownAddressType7timeouts6UInt16VAA0L0V_AA03LowflM0OAnA17HCICommandTimeoutVtKF">lowEnergyCreateConnection(address:type:ownAddressType:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergyCreateConnection7address4type14ownAddressType7timeouts6UInt16VAA0aL0V_AA03LowflM0OAnA17HCICommandTimeoutVtKF">lowEnergyCreateConnection(address:type:ownAddressType:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -3168,7 +3162,7 @@ used to resolve Resolvable Private Addresses in the Controller.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergyCreateConnection</span><span class="p">(</span><span class="n"><a href="../Protocols/BluetoothHostControllerInterface.html#/s:9Bluetooth0A23HostControllerInterfaceP7addressAA7AddressVvp">address</a></span> <span class="nv">peerAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergyCreateConnection</span><span class="p">(</span><span class="n"><a href="../Protocols/BluetoothHostControllerInterface.html#/s:9Bluetooth0A23HostControllerInterfaceP7addressAA0A7AddressVvp">address</a></span> <span class="nv">peerAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                                <span class="n">type</span> <span class="nv">peerAddressType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LowEnergyAddressType.html">LowEnergyAddressType</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">public</span><span class="p">,</span>
                                <span class="nv">ownAddressType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LowEnergyAddressType.html">LowEnergyAddressType</a></span> <span class="o">=</span> <span class="o">.</span><span class="kd">public</span><span class="p">,</span>
                                <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">UInt16</span></code></pre>
@@ -3356,9 +3350,9 @@ at a fixed interval. The Controller shall transmit at maximum power.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE33lowEnergyExtendedCreateConnection22initialingFilterPolicy14ownAddressType04peernO00pN00J3PHY7timeoutAA013HCILEEnhancedI8CompleteVAA013HCILEExtendedhI0V010InitialingkL0O_AN03OwnnO0OAA03Lowf12PeerIdentifynO0OAA0N0VAN0vQ0OAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE33lowEnergyExtendedCreateConnection22initialingFilterPolicy14ownAddressType04peernO00pN00J3PHY7timeoutAA013HCILEEnhancedI8CompleteVAA013HCILEExtendedhI0V010InitialingkL0O_AN03OwnnO0OAA03Lowf12PeerIdentifynO0OAA0aN0VAN0vQ0OAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/lowEnergyExtendedCreateConnection(initialingFilterPolicy:ownAddressType:peerAddressType:peerAddress:initialingPHY:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE33lowEnergyExtendedCreateConnection22initialingFilterPolicy14ownAddressType04peernO00pN00J3PHY7timeoutAA013HCILEEnhancedI8CompleteVAA013HCILEExtendedhI0V010InitialingkL0O_AN03OwnnO0OAA03Lowf12PeerIdentifynO0OAA0N0VAN0vQ0OAA17HCICommandTimeoutVtKF">lowEnergyExtendedCreateConnection(initialingFilterPolicy:ownAddressType:peerAddressType:peerAddress:initialingPHY:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE33lowEnergyExtendedCreateConnection22initialingFilterPolicy14ownAddressType04peernO00pN00J3PHY7timeoutAA013HCILEEnhancedI8CompleteVAA013HCILEExtendedhI0V010InitialingkL0O_AN03OwnnO0OAA03Lowf12PeerIdentifynO0OAA0aN0VAN0vQ0OAA17HCICommandTimeoutVtKF">lowEnergyExtendedCreateConnection(initialingFilterPolicy:ownAddressType:peerAddressType:peerAddress:initialingPHY:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -3381,7 +3375,7 @@ at a fixed interval. The Controller shall transmit at maximum power.</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergyExtendedCreateConnection</span><span class="p">(</span><span class="nv">initialingFilterPolicy</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCILEExtendedCreateConnection.html">HCILEExtendedCreateConnection</a></span><span class="o">.</span><span class="kt">InitialingFilterPolicy</span><span class="p">,</span>
                                        <span class="nv">ownAddressType</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCILEExtendedCreateConnection.html">HCILEExtendedCreateConnection</a></span><span class="o">.</span><span class="kt">OwnAddressType</span><span class="p">,</span>
                                        <span class="nv">peerAddressType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LowEnergyPeerIdentifyAddressType.html">LowEnergyPeerIdentifyAddressType</a></span><span class="p">,</span>
-                                       <span class="nv">peerAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                                       <span class="nv">peerAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                                        <span class="nv">initialingPHY</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCILEExtendedCreateConnection.html">HCILEExtendedCreateConnection</a></span><span class="o">.</span><span class="kt">InitialingPHY</span><span class="p">,</span>
                                        <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/HCILEEnhancedConnectionComplete.html">HCILEEnhancedConnectionComplete</a></span></code></pre>
 
@@ -4736,9 +4730,9 @@ Resolvable Private Addresses in the Controller.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE45lowEnergyRemoveDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA03LowfknO0O_AA0N0Vs5UInt8VAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE45lowEnergyRemoveDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA03LowfknO0O_AA0aN0Vs5UInt8VAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/lowEnergyRemoveDeviceToPeriodicAdvertiserList(advertiserAddressType:address:advertisingSid:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE45lowEnergyRemoveDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA03LowfknO0O_AA0N0Vs5UInt8VAA17HCICommandTimeoutVtKF">lowEnergyRemoveDeviceToPeriodicAdvertiserList(advertiserAddressType:address:advertisingSid:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE45lowEnergyRemoveDeviceToPeriodicAdvertiserList21advertiserAddressType7address14advertisingSid7timeoutyAA03LowfknO0O_AA0aN0Vs5UInt8VAA17HCICommandTimeoutVtKF">lowEnergyRemoveDeviceToPeriodicAdvertiserList(advertiserAddressType:address:advertisingSid:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -4760,7 +4754,7 @@ Advertisers stored in the Controller. Removals from the Periodic Advertisers Lis
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergyRemoveDeviceToPeriodicAdvertiserList</span><span class="p">(</span><span class="nv">advertiserAddressType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LowEnergyAdvertiserAddressType.html">LowEnergyAdvertiserAddressType</a></span><span class="p">,</span>
-                                                   <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                                                   <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                                                    <span class="nv">advertisingSid</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span>
                                                    <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span>  <span class="k">throws</span></code></pre>
 
@@ -4960,9 +4954,9 @@ LE Set Advertising Parameters command.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE30setAdvertisingSetRandomAddress17advertisingHandle0jhI07timeoutys5UInt8V_AA0I0VAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE30setAdvertisingSetRandomAddress17advertisingHandle0jhI07timeoutys5UInt8V_AA0aI0VAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/setAdvertisingSetRandomAddress(advertisingHandle:advertisingRandomAddress:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE30setAdvertisingSetRandomAddress17advertisingHandle0jhI07timeoutys5UInt8V_AA0I0VAA17HCICommandTimeoutVtKF">setAdvertisingSetRandomAddress(advertisingHandle:advertisingRandomAddress:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE30setAdvertisingSetRandomAddress17advertisingHandle0jhI07timeoutys5UInt8V_AA0aI0VAA17HCICommandTimeoutVtKF">setAdvertisingSetRandomAddress(advertisingHandle:advertisingRandomAddress:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -4983,7 +4977,7 @@ LE Set Advertising Parameters command.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setAdvertisingSetRandomAddress</span><span class="p">(</span><span class="nv">advertisingHandle</span><span class="p">:</span> <span class="kt">UInt8</span><span class="p">,</span>
-                                    <span class="nv">advertisingRandomAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                                    <span class="nv">advertisingRandomAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                                     <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
@@ -5566,9 +5560,9 @@ the current PHY is preferable.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE23lowEnergySetPrivacyMode23peerIdentityAddressType0jkL007privacyI07timeoutyAA03Lowf12PeerIdentifylM0O_AA0L0VAA08HCILESethI0V0hI0OAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE23lowEnergySetPrivacyMode23peerIdentityAddressType0jkL007privacyI07timeoutyAA03Lowf12PeerIdentifylM0O_AA0aL0VAA08HCILESethI0V0hI0OAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/lowEnergySetPrivacyMode(peerIdentityAddressType:peerIdentityAddress:privacyMode:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE23lowEnergySetPrivacyMode23peerIdentityAddressType0jkL007privacyI07timeoutyAA03Lowf12PeerIdentifylM0O_AA0L0VAA08HCILESethI0V0hI0OAA17HCICommandTimeoutVtKF">lowEnergySetPrivacyMode(peerIdentityAddressType:peerIdentityAddress:privacyMode:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE23lowEnergySetPrivacyMode23peerIdentityAddressType0jkL007privacyI07timeoutyAA03Lowf12PeerIdentifylM0O_AA0aL0VAA08HCILESethI0V0hI0OAA17HCICommandTimeoutVtKF">lowEnergySetPrivacyMode(peerIdentityAddressType:peerIdentityAddress:privacyMode:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -5589,7 +5583,7 @@ the current PHY is preferable.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergySetPrivacyMode</span><span class="p">(</span><span class="nv">peerIdentityAddressType</span><span class="p">:</span> <span class="kt"><a href="../Enums/LowEnergyPeerIdentifyAddressType.html">LowEnergyPeerIdentifyAddressType</a></span><span class="p">,</span>
-                             <span class="nv">peerIdentityAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                             <span class="nv">peerIdentityAddress</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                              <span class="nv">privacyMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCILESetPrivacyMode.html">HCILESetPrivacyMode</a></span><span class="o">.</span><span class="kt">PrivacyMode</span> <span class="o">=</span> <span class="kt"><a href="../Structs/HCILESetPrivacyMode.html">HCILESetPrivacyMode</a></span><span class="o">.</span><span class="kt">PrivacyMode</span><span class="o">.</span><span class="n">networkPrivacy</span><span class="p">,</span>
                              <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
@@ -5612,9 +5606,9 @@ the current PHY is preferable.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergySetRandomAddress_7timeoutyAA0I0V_AA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergySetRandomAddress_7timeoutyAA0aI0V_AA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/lowEnergySetRandomAddress(_:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergySetRandomAddress_7timeoutyAA0I0V_AA17HCICommandTimeoutVtKF">lowEnergySetRandomAddress(_:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE25lowEnergySetRandomAddress_7timeoutyAA0aI0V_AA17HCICommandTimeoutVtKF">lowEnergySetRandomAddress(_:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -5632,7 +5626,7 @@ the current PHY is preferable.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergySetRandomAddress</span><span class="p">(</span><span class="n">_</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">lowEnergySetRandomAddress</span><span class="p">(</span><span class="n">_</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span> <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -6144,9 +6138,9 @@ of payload octets and maximum packet transmission time to be used for new connec
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE27linkKeyRequestNegativeReply7address7timeoutAA7AddressVAH_AA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE27linkKeyRequestNegativeReply7address7timeoutAA0A7AddressVAH_AA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/linkKeyRequestNegativeReply(address:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE27linkKeyRequestNegativeReply7address7timeoutAA7AddressVAH_AA17HCICommandTimeoutVtKF">linkKeyRequestNegativeReply(address:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE27linkKeyRequestNegativeReply7address7timeoutAA0A7AddressVAH_AA17HCICommandTimeoutVtKF">linkKeyRequestNegativeReply(address:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6167,8 +6161,8 @@ When the BR/EDR Controller generates a Link Key Request event in order for the l
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">linkKeyRequestNegativeReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
-                                 <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">linkKeyRequestNegativeReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
+                                 <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span></code></pre>
 
                         </div>
                       </div>
@@ -6189,9 +6183,9 @@ When the BR/EDR Controller generates a Link Key Request event in order for the l
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE19linkKeyRequestReply7address0eF07timeoutyAA7AddressV_AA7UInt128VAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE19linkKeyRequestReply7address0eF07timeoutyAA0A7AddressV_AA7UInt128VAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/linkKeyRequestReply(address:linkKey:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE19linkKeyRequestReply7address0eF07timeoutyAA7AddressV_AA7UInt128VAA17HCICommandTimeoutVtKF">linkKeyRequestReply(address:linkKey:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE19linkKeyRequestReply7address0eF07timeoutyAA0A7AddressV_AA7UInt128VAA17HCICommandTimeoutVtKF">linkKeyRequestReply(address:linkKey:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6212,7 +6206,7 @@ When the BR/EDR Controller generates a Link Key Request event in order for the l
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">linkKeyRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">linkKeyRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                          <span class="nv">linkKey</span><span class="p">:</span> <span class="kt"><a href="../Structs/UInt128.html">UInt128</a></span><span class="p">,</span>
                          <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
@@ -6235,9 +6229,9 @@ When the BR/EDR Controller generates a Link Key Request event in order for the l
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE19pinCodeRequestReply7address0eF6Length0eF07timeoutAA7AddressVAJ_AA010HCIPINCodegH0V07PINCodeJ0VAA7UInt128VAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE19pinCodeRequestReply7address0eF6Length0eF07timeoutAA0A7AddressVAJ_AA010HCIPINCodegH0V07PINCodeJ0VAA7UInt128VAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/pinCodeRequestReply(address:pinCodeLength:pinCode:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE19pinCodeRequestReply7address0eF6Length0eF07timeoutAA7AddressVAJ_AA010HCIPINCodegH0V07PINCodeJ0VAA7UInt128VAA17HCICommandTimeoutVtKF">pinCodeRequestReply(address:pinCodeLength:pinCode:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE19pinCodeRequestReply7address0eF6Length0eF07timeoutAA0A7AddressVAJ_AA010HCIPINCodegH0V07PINCodeJ0VAA7UInt128VAA17HCICommandTimeoutVtKF">pinCodeRequestReply(address:pinCodeLength:pinCode:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6258,10 +6252,10 @@ When the BR/EDR Controller generates a Link Key Request event in order for the l
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pinCodeRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">pinCodeRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                          <span class="nv">pinCodeLength</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIPINCodeRequestReply.html">HCIPINCodeRequestReply</a></span><span class="o">.</span><span class="kt">PINCodeLength</span><span class="p">,</span>
                          <span class="nv">pinCode</span><span class="p">:</span> <span class="kt"><a href="../Structs/UInt128.html">UInt128</a></span><span class="p">,</span>
-                         <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span></code></pre>
+                         <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span></code></pre>
 
                         </div>
                       </div>
@@ -6511,9 +6505,9 @@ The Host uses this information when fragmenting data for transmission, and when 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE17readDeviceAddress7timeoutAA0G0VAA17HCICommandTimeoutV_tKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE17readDeviceAddress7timeoutAA0aG0VAA17HCICommandTimeoutV_tKF"></a>
                     <a name="//apple_ref/swift/Method/readDeviceAddress(timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE17readDeviceAddress7timeoutAA0G0VAA17HCICommandTimeoutV_tKF">readDeviceAddress(timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE17readDeviceAddress7timeoutAA0aG0VAA17HCICommandTimeoutV_tKF">readDeviceAddress(timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6531,7 +6525,7 @@ The Host uses this information when fragmenting data for transmission, and when 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">readDeviceAddress</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">readDeviceAddress</span><span class="p">(</span><span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span></code></pre>
 
                         </div>
                       </div>
@@ -6899,9 +6893,9 @@ The Host uses this information when fragmenting data for transmission, and when 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE17readStoredLinkKey7address0E4Flag7timeoutAA07HCIReadfgH6ReturnVAA7AddressV_AA0lfgH0V04ReadJ0OAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE17readStoredLinkKey7address0E4Flag7timeoutAA07HCIReadfgH6ReturnVAA0A7AddressV_AA0lfgH0V04ReadJ0OAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/readStoredLinkKey(address:readFlag:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE17readStoredLinkKey7address0E4Flag7timeoutAA07HCIReadfgH6ReturnVAA7AddressV_AA0lfgH0V04ReadJ0OAA17HCICommandTimeoutVtKF">readStoredLinkKey(address:readFlag:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE17readStoredLinkKey7address0E4Flag7timeoutAA07HCIReadfgH6ReturnVAA0A7AddressV_AA0lfgH0V04ReadJ0OAA17HCICommandTimeoutVtKF">readStoredLinkKey(address:readFlag:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6921,7 +6915,7 @@ The Host uses this information when fragmenting data for transmission, and when 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">readStoredLinkKey</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">readStoredLinkKey</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                        <span class="nv">readFlag</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIReadStoredLinkKey.html">HCIReadStoredLinkKey</a></span><span class="o">.</span><span class="kt">ReadFlag</span><span class="p">,</span>
                        <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/HCIReadStoredLinkKeyReturn.html">HCIReadStoredLinkKeyReturn</a></span></code></pre>
 
@@ -6944,9 +6938,9 @@ The Host uses this information when fragmenting data for transmission, and when 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16rejectConnection7address5error7timeoutyAA7AddressV_AA8HCIErrorOAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE16rejectConnection7address5error7timeoutyAA0A7AddressV_AA8HCIErrorOAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/rejectConnection(address:error:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16rejectConnection7address5error7timeoutyAA7AddressV_AA8HCIErrorOAA17HCICommandTimeoutVtKF">rejectConnection(address:error:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE16rejectConnection7address5error7timeoutyAA0A7AddressV_AA8HCIErrorOAA17HCICommandTimeoutVtKF">rejectConnection(address:error:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -6966,7 +6960,7 @@ The Host uses this information when fragmenting data for transmission, and when 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rejectConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">rejectConnection</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                       <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/HCIError.html">HCIError</a></span><span class="p">,</span>
                       <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
@@ -6989,9 +6983,9 @@ The Host uses this information when fragmenting data for transmission, and when 
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE17remoteNameRequest7address12pscanRepMode11clockOffset7timeoutAA09HCIRemotefG8CompleteVAA7AddressV_AA018PageScanRepetitionK0VAA0ofG0V05ClockM0VAA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE17remoteNameRequest7address12pscanRepMode11clockOffset7timeoutAA09HCIRemotefG8CompleteVAA0A7AddressV_AA018PageScanRepetitionK0VAA0ofG0V05ClockM0VAA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/remoteNameRequest(address:pscanRepMode:clockOffset:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE17remoteNameRequest7address12pscanRepMode11clockOffset7timeoutAA09HCIRemotefG8CompleteVAA7AddressV_AA018PageScanRepetitionK0VAA0ofG0V05ClockM0VAA17HCICommandTimeoutVtKF">remoteNameRequest(address:pscanRepMode:clockOffset:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE17remoteNameRequest7address12pscanRepMode11clockOffset7timeoutAA09HCIRemotefG8CompleteVAA0A7AddressV_AA018PageScanRepetitionK0VAA0ofG0V05ClockM0VAA17HCICommandTimeoutVtKF">remoteNameRequest(address:pscanRepMode:clockOffset:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7018,7 +7012,7 @@ The Host uses this information when fragmenting data for transmission, and when 
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">remoteNameRequest</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">remoteNameRequest</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
                        <span class="nv">pscanRepMode</span><span class="p">:</span> <span class="kt"><a href="../Structs/PageScanRepetitionMode.html">PageScanRepetitionMode</a></span><span class="p">,</span>
                        <span class="nv">clockOffset</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCIRemoteNameRequest.html">HCIRemoteNameRequest</a></span><span class="o">.</span><span class="kt">ClockOffset</span><span class="p">,</span>
                        <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/HCIRemoteNameRequestComplete.html">HCIRemoteNameRequestComplete</a></span></code></pre>
@@ -7136,9 +7130,9 @@ The Host shall not send additional HCI commands before the Command Com- plete ev
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE28userConfirmationRequestReply7address7timeoutAA7AddressVAH_AA17HCICommandTimeoutVtKF"></a>
+                    <a name="/s:9Bluetooth0A23HostControllerInterfacePAAE28userConfirmationRequestReply7address7timeoutAA0A7AddressVAH_AA17HCICommandTimeoutVtKF"></a>
                     <a name="//apple_ref/swift/Method/userConfirmationRequestReply(address:timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE28userConfirmationRequestReply7address7timeoutAA7AddressVAH_AA17HCICommandTimeoutVtKF">userConfirmationRequestReply(address:timeout:)</a>
+                    <a class="token" href="#/s:9Bluetooth0A23HostControllerInterfacePAAE28userConfirmationRequestReply7address7timeoutAA0A7AddressVAH_AA17HCICommandTimeoutVtKF">userConfirmationRequestReply(address:timeout:)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7158,8 +7152,8 @@ The Host shall not send additional HCI commands before the Command Com- plete ev
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userConfirmationRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span><span class="p">,</span>
-                                  <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Address.html">Address</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">userConfirmationRequestReply</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span><span class="p">,</span>
+                                  <span class="nv">timeout</span><span class="p">:</span> <span class="kt"><a href="../Structs/HCICommandTimeout.html">HCICommandTimeout</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/BluetoothAddress.html">BluetoothAddress</a></span></code></pre>
 
                         </div>
                       </div>
@@ -7832,7 +7826,7 @@ used to resolve Resolvable Private Addresses in the Controller.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-10-31)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-11-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

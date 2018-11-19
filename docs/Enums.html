@@ -54,9 +54,6 @@
             <a class="nav-group-name-link" href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Classes/ATTConnection.html">ATTConnection</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/GATTClient.html">GATTClient</a>
               </li>
               <li class="nav-group-task">
@@ -101,13 +98,7 @@
                 <a class="nav-group-task-link" href="Enums/ATTOpcodeType.html">ATTOpcodeType</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/ATTResponse.html">ATTResponse</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/AdvertisingChannelHeader.html">AdvertisingChannelHeader</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Enums/AnyATTResponse.html">AnyATTResponse</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/BluetoothHostControllerError.html">BluetoothHostControllerError</a>
@@ -551,9 +542,6 @@
                 <a class="nav-group-task-link" href="Structs/ATTWriteResponse.html">ATTWriteResponse</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Structs/Address.html">Address</a>
-              </li>
-              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/AdvertisingInterval.html">AdvertisingInterval</a>
               </li>
               <li class="nav-group-task">
@@ -561,6 +549,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/BitMaskOptionSet.html">BitMaskOptionSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/BluetoothAddress.html">BluetoothAddress</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ClassOfDevice.html">ClassOfDevice</a>
@@ -2140,6 +2131,9 @@
             <a class="nav-group-name-link" href="Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:9Bluetooth7Addressa">Address</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:9Bluetooth21HCIOpcodeCommandFielda">HCIOpcodeCommandField</a>
               </li>
               <li class="nav-group-task">
@@ -2331,62 +2325,6 @@ permissions is a byte that encodes a combination of these.</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ATTConnectionError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth14AnyATTResponseO"></a>
-                    <a name="//apple_ref/swift/Enum/AnyATTResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth14AnyATTResponseO">AnyATTResponse</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Type-erased ATT Response</p>
-
-                        <a href="Enums/AnyATTResponse.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AnyATTResponse</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:9Bluetooth11ATTResponseO"></a>
-                    <a name="//apple_ref/swift/Enum/ATTResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9Bluetooth11ATTResponseO">ATTResponse</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                        <a href="Enums/ATTResponse.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ATTResponse</span><span class="o">&lt;</span><span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Value</span> <span class="p">:</span> <span class="kt"><a href="Protocols/ATTProtocolDataUnit.html">ATTProtocolDataUnit</a></span></code></pre>
 
                         </div>
                       </div>
@@ -4732,7 +4670,7 @@ the RX_PHYS parameter is ignored; otherwise at least one bit shall be set to 1.<
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-10-31)</p>
+      <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">PureSwift</a>. All rights reserved. (Last updated: 2018-11-18)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
