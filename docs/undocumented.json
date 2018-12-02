@@ -366,7 +366,7 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATT.swift",
-      "line": 228,
+      "line": 231,
       "symbol": "ATTAttributePermission.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -387,175 +387,182 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTErrorResponse.swift",
-      "line": 30,
+      "line": 28,
       "symbol": "ATTErrorResponse.init(request:attributeHandle:error:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTExecuteWriteResponse.swift",
-      "line": 17,
+      "line": 16,
       "symbol": "ATTExecuteWriteResponse.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindByTypeRequest.swift",
-      "line": 38,
+      "line": 35,
       "symbol": "ATTFindByTypeRequest.init(startHandle:endHandle:attributeType:attributeValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindByTypeResponse.swift",
-      "line": 25,
-      "symbol": "ATTFindByTypeResponse.init(handlesInformationList:)",
+      "line": 22,
+      "symbol": "ATTFindByTypeResponse.init(handles:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindByTypeResponse.swift",
-      "line": 99,
+      "line": 105,
       "symbol": "ATTFindByTypeResponse.HandlesInformation.init(foundAttribute:groupEnd:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationRequest.swift",
-      "line": 20,
+      "line": 19,
       "symbol": "ATTFindInformationRequest.startHandle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationRequest.swift",
-      "line": 22,
+      "line": 21,
       "symbol": "ATTFindInformationRequest.endHandle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationRequest.swift",
-      "line": 24,
+      "line": 23,
       "symbol": "ATTFindInformationRequest.init(startHandle:endHandle:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationResponse.swift",
-      "line": 25,
+      "line": 22,
       "symbol": "ATTFindInformationResponse.init(attributeData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationResponse.swift",
-      "line": 58,
+      "line": 76,
       "symbol": "ATTFindInformationResponse.Format",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationResponse.swift",
-      "line": 66,
+      "line": 84,
       "symbol": "ATTFindInformationResponse.Format.init(uuid:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTFindInformationResponse.swift",
-      "line": 181,
-      "symbol": "ATTFindInformationResponse.AttributeData.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTHandleValueConfirmation.swift",
-      "line": 21,
+      "line": 19,
       "symbol": "ATTHandleValueConfirmation.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTHandleValueIndication.swift",
-      "line": 27,
+      "line": 24,
       "symbol": "ATTHandleValueIndication.init(handle:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTHandleValueIndication.swift",
+      "line": 51,
+      "symbol": "ATTHandleValueIndication.init(attribute:maximumTransmissionUnit:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTHandleValueNotification.swift",
-      "line": 27,
+      "line": 24,
       "symbol": "ATTHandleValueNotification.init(handle:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTHandleValueNotification.swift",
+      "line": 51,
+      "symbol": "ATTHandleValueNotification.init(attribute:maximumTransmissionUnit:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTMaximumTransmissionUnit.swift",
-      "line": 41,
+      "line": 39,
       "symbol": "ATTMaximumTransmissionUnit.default",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTMaximumTransmissionUnit.swift",
-      "line": 43,
+      "line": 41,
       "symbol": "ATTMaximumTransmissionUnit.min",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTMaximumTransmissionUnit.swift",
-      "line": 45,
+      "line": 43,
       "symbol": "ATTMaximumTransmissionUnit.max",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTMaximumTransmissionUnit.swift",
-      "line": 47,
+      "line": 45,
       "symbol": "ATTMaximumTransmissionUnit.init(server:client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTMaximumTransmissionUnitRequest.swift",
-      "line": 30,
+      "line": 28,
       "symbol": "ATTMaximumTransmissionUnitRequest.init(clientMTU:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTMaximumTransmissionUnitResponse.swift",
-      "line": 26,
+      "line": 24,
       "symbol": "ATTMaximumTransmissionUnitResponse.init(serverMTU:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTPrepareWriteRequest.swift",
-      "line": 32,
+      "line": 29,
       "symbol": "ATTPrepareWriteRequest.init(handle:offset:partValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTPrepareWriteResponse.swift",
-      "line": 30,
+      "line": 27,
       "symbol": "ATTPrepareWriteResponse.init(handle:offset:partValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadBlobRequest.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "ATTReadBlobRequest.init(handle:offset:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadBlobResponse.swift",
-      "line": 29,
+      "line": 26,
       "symbol": "ATTReadBlobResponse.init(partAttributeValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -569,21 +576,21 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadByGroupTypeResponse.swift",
-      "line": 27,
+      "line": 24,
       "symbol": "ATTReadByGroupTypeResponse.init(attributeData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadByGroupTypeResponse.swift",
-      "line": 104,
+      "line": 75,
       "symbol": "ATTReadByGroupTypeResponse.AttributeData",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadByGroupTypeResponse.swift",
-      "line": 118,
+      "line": 86,
       "symbol": "ATTReadByGroupTypeResponse.AttributeData.init(attributeHandle:endGroupHandle:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -597,49 +604,42 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadByTypeResponse.swift",
-      "line": 25,
+      "line": 22,
       "symbol": "ATTReadByTypeResponse.init(attributeData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadByTypeResponse.swift",
-      "line": 115,
-      "symbol": "ATTReadByTypeResponse.AttributeData.init(handle:value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadMultipleRequest.swift",
-      "line": 28,
+      "line": 25,
       "symbol": "ATTReadMultipleRequest.init(handles:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadMultipleResponse.swift",
-      "line": 22,
+      "line": 19,
       "symbol": "ATTReadMultipleResponse.values",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadMultipleResponse.swift",
-      "line": 24,
+      "line": 21,
       "symbol": "ATTReadMultipleResponse.init(values:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadRequest.swift",
-      "line": 24,
+      "line": 22,
       "symbol": "ATTReadRequest.init(handle:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTReadResponse.swift",
-      "line": 27,
+      "line": 24,
       "symbol": "ATTReadResponse.init(attributeValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -653,42 +653,42 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTSignedWriteCommand.swift",
-      "line": 33,
+      "line": 30,
       "symbol": "ATTSignedWriteCommand.init(handle:value:signature:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTWriteCommand.swift",
-      "line": 27,
+      "line": 24,
       "symbol": "ATTWriteCommand.init(handle:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTWriteRequest.swift",
-      "line": 28,
+      "line": 25,
       "symbol": "ATTWriteRequest.init(handle:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/ATTWriteResponse.swift",
-      "line": 20,
+      "line": 19,
       "symbol": "ATTWriteResponse.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/Address.swift",
-      "line": 63,
+      "line": 57,
       "symbol": "BluetoothAddress.init(data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/Address.swift",
-      "line": 71,
+      "line": 65,
       "symbol": "BluetoothAddress.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -703,120 +703,113 @@
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
       "line": 29,
-      "symbol": "AdvertisingInterval.min",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
-      "line": 31,
-      "symbol": "AdvertisingInterval.max",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
-      "line": 33,
-      "symbol": "AdvertisingInterval.default",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
-      "line": 35,
       "symbol": "AdvertisingInterval.init(rawValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
-      "line": 49,
+      "line": 43,
       "symbol": "AdvertisingInterval.miliseconds",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
+      "line": 51,
+      "symbol": "AdvertisingInterval.min",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
+      "line": 53,
+      "symbol": "AdvertisingInterval.max",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/AdvertisingInterval.swift",
+      "line": 55,
+      "symbol": "AdvertisingInterval.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 38,
+      "line": 34,
       "symbol": "BitMaskOption.from(rawValue:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 62,
+      "line": 58,
       "symbol": "BitMaskOptionSet.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 67,
+      "line": 63,
       "symbol": "BitMaskOptionSet.all",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 73,
+      "line": 69,
       "symbol": "BitMaskOptionSet.insert(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 79,
+      "line": 75,
       "symbol": "BitMaskOptionSet.remove(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 89,
+      "line": 85,
       "symbol": "BitMaskOptionSet.removeAll()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 95,
+      "line": 91,
       "symbol": "BitMaskOptionSet.contains(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 100,
+      "line": 96,
       "symbol": "BitMaskOptionSet.contains(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 111,
+      "line": 107,
       "symbol": "BitMaskOptionSet.count",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 116,
+      "line": 112,
       "symbol": "BitMaskOptionSet.isEmpty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 126,
+      "line": 122,
       "symbol": "BitMaskOptionSet.init(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BitMaskOption.swift",
-      "line": 136,
-      "symbol": "BitMaskOptionSet.set",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -849,28 +842,28 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BluetoothUUID.swift",
-      "line": 130,
+      "line": 150,
       "symbol": "BluetoothUUID.init(data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BluetoothUUID.swift",
-      "line": 161,
+      "line": 177,
       "symbol": "BluetoothUUID.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BluetoothUUID.swift",
-      "line": 349,
+      "line": 356,
       "symbol": "BluetoothUUID.init(coreBluetooth:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/BluetoothUUID.swift",
-      "line": 358,
+      "line": 365,
       "symbol": "BluetoothUUID.toCoreBluetooth()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1227,127 +1220,29 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 44,
-      "symbol": "GAP3DInformation.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 46,
-      "symbol": "GAP3DInformation.flags",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 48,
-      "symbol": "GAP3DInformation.pathLossThreshold",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 50,
+      "line": 55,
       "symbol": "GAP3DInformation.init(flags:pathLossThreshold:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 56,
-      "symbol": "GAP3DInformation.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 67,
-      "symbol": "GAP3DInformation.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 90,
-      "symbol": "GAP3DInformationFlag",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 92,
-      "symbol": "GAP3DInformationFlag.associationNotification",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 94,
-      "symbol": "GAP3DInformationFlag.batteryLevelReporting",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 96,
-      "symbol": "GAP3DInformationFlag.sendBatteryLevelOnStartUp",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAP3DInformation.swift",
-      "line": 98,
-      "symbol": "GAP3DInformationFlag.factoryTestMode",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
       "line": 20,
-      "symbol": "GAPAdvertisingInterval.units",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
-      "line": 22,
-      "symbol": "GAPAdvertisingInterval.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
-      "line": 24,
       "symbol": "GAPAdvertisingInterval.interval",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
-      "line": 26,
-      "symbol": "GAPAdvertisingInterval.miliseconds",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
-      "line": 31,
+      "line": 22,
       "symbol": "GAPAdvertisingInterval.init(interval:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
-      "line": 36,
-      "symbol": "GAPAdvertisingInterval.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAdvertisingInterval.swift",
-      "line": 46,
-      "symbol": "GAPAdvertisingInterval.data",
+      "line": 32,
+      "symbol": "GAPAdvertisingInterval.miliseconds",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -1655,78 +1550,36 @@
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAppearanceData.swift",
       "line": 17,
-      "symbol": "GAPAppearanceData.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAppearanceData.swift",
-      "line": 19,
       "symbol": "GAPAppearanceData.appearance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAppearanceData.swift",
-      "line": 21,
+      "line": 19,
       "symbol": "GAPAppearanceData.init(appearance:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAppearanceData.swift",
-      "line": 26,
-      "symbol": "GAPAppearanceData.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPAppearanceData.swift",
-      "line": 36,
-      "symbol": "GAPAppearanceData.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPChannelMapUpdateIndication.swift",
       "line": 19,
-      "symbol": "GAPChannelMapUpdateIndication.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPChannelMapUpdateIndication.swift",
-      "line": 21,
       "symbol": "GAPChannelMapUpdateIndication.channelMap",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPChannelMapUpdateIndication.swift",
-      "line": 23,
+      "line": 21,
       "symbol": "GAPChannelMapUpdateIndication.instant",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPChannelMapUpdateIndication.swift",
-      "line": 25,
+      "line": 23,
       "symbol": "GAPChannelMapUpdateIndication.init(channelMap:instant:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPChannelMapUpdateIndication.swift",
-      "line": 31,
-      "symbol": "GAPChannelMapUpdateIndication.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPChannelMapUpdateIndication.swift",
-      "line": 39,
-      "symbol": "GAPChannelMapUpdateIndication.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1739,43 +1592,15 @@
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPClassOfDevice.swift",
       "line": 19,
-      "symbol": "GAPClassOfDevice.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPClassOfDevice.swift",
-      "line": 21,
       "symbol": "GAPClassOfDevice.device",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPClassOfDevice.swift",
-      "line": 23,
+      "line": 21,
       "symbol": "GAPClassOfDevice.init(device:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPClassOfDevice.swift",
-      "line": 28,
-      "symbol": "GAPClassOfDevice.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPClassOfDevice.swift",
-      "line": 38,
-      "symbol": "GAPClassOfDevice.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf128BitServiceClassUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPCompleteListOf128BitServiceClassUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -1793,27 +1618,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf128BitServiceClassUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPCompleteListOf128BitServiceClassUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf128BitServiceClassUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPCompleteListOf128BitServiceClassUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf16BitServiceClassUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPCompleteListOf16BitServiceClassUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf16BitServiceClassUUIDs.swift",
       "line": 16,
       "symbol": "GAPCompleteListOf16BitServiceClassUUIDs.uuids",
@@ -1825,27 +1629,6 @@
       "line": 18,
       "symbol": "GAPCompleteListOf16BitServiceClassUUIDs.init(uuids:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf16BitServiceClassUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPCompleteListOf16BitServiceClassUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf16BitServiceClassUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPCompleteListOf16BitServiceClassUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf32BitServiceClassUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPCompleteListOf32BitServiceClassUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -1863,27 +1646,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf32BitServiceClassUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPCompleteListOf32BitServiceClassUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteListOf32BitServiceClassUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPCompleteListOf32BitServiceClassUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteLocalName.swift",
-      "line": 18,
-      "symbol": "GAPCompleteLocalName.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteLocalName.swift",
       "line": 20,
       "symbol": "GAPCompleteLocalName.name",
@@ -1898,148 +1660,92 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteLocalName.swift",
-      "line": 27,
-      "symbol": "GAPCompleteLocalName.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPCompleteLocalName.swift",
-      "line": 35,
-      "symbol": "GAPCompleteLocalName.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPData.swift",
-      "line": 19,
-      "symbol": "GAP.DataType",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPData.swift",
-      "line": 27,
-      "symbol": "GAPData.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPData.swift",
-      "line": 29,
-      "symbol": "GAPData.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPData.swift",
-      "line": 31,
+      "line": 46,
       "symbol": "GAPData.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 11,
-      "symbol": "GAPDataElement",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 13,
-      "symbol": "GAPDataElement.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 15,
-      "symbol": "GAPDataElement.value",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 17,
-      "symbol": "GAPDataElement.init(type:value:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 23,
-      "symbol": "GAPDataElement.init(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 30,
-      "symbol": "GAPDataEncoder",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
       "line": 37,
       "symbol": "GAPDataEncoder.encode(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 47,
+      "line": 42,
+      "symbol": "GAPDataEncoder.encodeAdvertisingData(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
+      "line": 52,
       "symbol": "GAPDataEncoder.encode(_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 55,
-      "symbol": "GAPDataDecoder",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 57,
-      "symbol": "GAPDataDecoder.Error",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 59,
+      "line": 77,
       "symbol": "GAPDataDecoder.Error.insufficientBytes(expected:actual:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 60,
-      "symbol": "GAPDataDecoder.Error.cannotDecode(_:_:)",
+      "line": 78,
+      "symbol": "GAPDataDecoder.Error.cannotDecode(_:index:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 61,
+      "line": 79,
       "symbol": "GAPDataDecoder.Error.unknownType(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 64,
+      "line": 94,
+      "symbol": "GAPDataDecoder.ignoreUnknownType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
+      "line": 96,
+      "symbol": "GAPDataDecoder.types",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
+      "line": 107,
       "symbol": "GAPDataDecoder.decode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
+      "line": 112,
+      "symbol": "GAPDataDecoder.decode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
+      "line": 242,
+      "symbol": "GAPDataEncoder.encode(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPDataEncoder.swift",
-      "line": 125,
+      "line": 252,
       "symbol": "GAPDataDecoder.decode(_:types:ignoreUnknownType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
@@ -2049,13 +1755,6 @@
       "line": 180,
       "symbol": "GAPDataType.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPFlags.swift",
-      "line": 14,
-      "symbol": "GAPFlags.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -2073,27 +1772,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPFlags.swift",
-      "line": 23,
-      "symbol": "GAPFlags.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPFlags.swift",
-      "line": 57,
-      "symbol": "GAPFlags.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf128BitServiceClassUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPIncompleteListOf128BitServiceClassUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf128BitServiceClassUUIDs.swift",
       "line": 16,
       "symbol": "GAPIncompleteListOf128BitServiceClassUUIDs.uuids",
@@ -2105,27 +1783,6 @@
       "line": 18,
       "symbol": "GAPIncompleteListOf128BitServiceClassUUIDs.init(uuids:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf128BitServiceClassUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPIncompleteListOf128BitServiceClassUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf128BitServiceClassUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPIncompleteListOf128BitServiceClassUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf16BitServiceClassUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPIncompleteListOf16BitServiceClassUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -2143,27 +1800,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf16BitServiceClassUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPIncompleteListOf16BitServiceClassUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf16BitServiceClassUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPIncompleteListOf16BitServiceClassUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf32BitServiceClassUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPIncompleteListOf32BitServiceClassUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf32BitServiceClassUUIDs.swift",
       "line": 16,
       "symbol": "GAPIncompleteListOf32BitServiceClassUUIDs.uuids",
@@ -2178,311 +1814,94 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf32BitServiceClassUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPIncompleteListOf32BitServiceClassUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIncompleteListOf32BitServiceClassUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPIncompleteListOf32BitServiceClassUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 17,
-      "symbol": "GAPIndoorPositioning.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 19,
-      "symbol": "GAPIndoorPositioning.flags",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 21,
-      "symbol": "GAPIndoorPositioning.globalCoordinatesLatitude",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 23,
-      "symbol": "GAPIndoorPositioning.globalCoordinatesLongitude",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 25,
-      "symbol": "GAPIndoorPositioning.localCoordinatesNorth",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 27,
-      "symbol": "GAPIndoorPositioning.localCoordinatesEast",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 29,
-      "symbol": "GAPIndoorPositioning.txPower",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 31,
-      "symbol": "GAPIndoorPositioning.floorNumber",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 33,
-      "symbol": "GAPIndoorPositioning.altitude",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 35,
-      "symbol": "GAPIndoorPositioning.uncertainty",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 37,
-      "symbol": "GAPIndoorPositioning.init(flags:globalCoordinatesLatitude:globalCoordinatesLongitude:localCoordinatesNorth:localCoordinatesEast:txPower:floorNumber:altitude:uncertainty:)",
+      "line": 40,
+      "symbol": "GAPIndoorPositioning.init(coordinates:txPower:floorNumber:altitude:uncertainty:isLocationNamePresent:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 58,
-      "symbol": "GAPIndoorPositioning.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPIndoorPositioning.swift",
-      "line": 76,
-      "symbol": "GAPIndoorPositioning.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 240,
+      "symbol": "GAPIndoorPositioning.Coordinates",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLEDeviceAddress.swift",
       "line": 26,
-      "symbol": "GAPLEDeviceAddress.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLEDeviceAddress.swift",
-      "line": 28,
       "symbol": "GAPLEDeviceAddress.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLEDeviceAddress.swift",
-      "line": 30,
+      "line": 28,
       "symbol": "GAPLEDeviceAddress.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLEDeviceAddress.swift",
-      "line": 32,
+      "line": 30,
       "symbol": "GAPLEDeviceAddress.init(address:type:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLEDeviceAddress.swift",
-      "line": 38,
-      "symbol": "GAPLEDeviceAddress.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLEDeviceAddress.swift",
-      "line": 49,
-      "symbol": "GAPLEDeviceAddress.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 17,
-      "symbol": "GAPLERole.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 34,
+      "line": 58,
       "symbol": "GAPLERole.Role.central",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 35,
+      "line": 59,
       "symbol": "GAPLERole.Role.peripheral",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 40,
+      "line": 67,
       "symbol": "GAPLERole.supported",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 53,
+      "line": 80,
       "symbol": "GAPLERole.preferred",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 65,
-      "symbol": "GAPLERole.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLERole.swift",
-      "line": 73,
-      "symbol": "GAPLERole.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsConfirmation.swift",
       "line": 18,
-      "symbol": "GAPLESecureConnectionsConfirmation.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsConfirmation.swift",
-      "line": 20,
       "symbol": "GAPLESecureConnectionsConfirmation.confirmation",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsConfirmation.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "GAPLESecureConnectionsConfirmation.init(confirmation:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsConfirmation.swift",
-      "line": 27,
-      "symbol": "GAPLESecureConnectionsConfirmation.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsConfirmation.swift",
-      "line": 37,
-      "symbol": "GAPLESecureConnectionsConfirmation.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsRandom.swift",
       "line": 18,
-      "symbol": "GAPLESecureConnectionsRandom.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsRandom.swift",
-      "line": 20,
       "symbol": "GAPLESecureConnectionsRandom.random",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsRandom.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "GAPLESecureConnectionsRandom.init(random:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsRandom.swift",
-      "line": 27,
-      "symbol": "GAPLESecureConnectionsRandom.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESecureConnectionsRandom.swift",
-      "line": 37,
-      "symbol": "GAPLESecureConnectionsRandom.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESupportedFeatures.swift",
-      "line": 21,
-      "symbol": "GAPLESupportedFeatures.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESupportedFeatures.swift",
-      "line": 23,
-      "symbol": "GAPLESupportedFeatures.supportedFeatures",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESupportedFeatures.swift",
-      "line": 25,
-      "symbol": "GAPLESupportedFeatures.init(supportedFeatures:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESupportedFeatures.swift",
-      "line": 30,
-      "symbol": "GAPLESupportedFeatures.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPLESupportedFeatures.swift",
-      "line": 51,
-      "symbol": "GAPLESupportedFeatures.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf128BitServiceSolicitationUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPListOf128BitServiceSolicitationUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -2500,27 +1919,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf128BitServiceSolicitationUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPListOf128BitServiceSolicitationUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf128BitServiceSolicitationUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPListOf128BitServiceSolicitationUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf16BitServiceSolicitationUUIDs.swift",
-      "line": 18,
-      "symbol": "GAPListOf16BitServiceSolicitationUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf16BitServiceSolicitationUUIDs.swift",
       "line": 20,
       "symbol": "GAPListOf16BitServiceSolicitationUUIDs.uuids",
@@ -2532,27 +1930,6 @@
       "line": 22,
       "symbol": "GAPListOf16BitServiceSolicitationUUIDs.init(uuids:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf16BitServiceSolicitationUUIDs.swift",
-      "line": 27,
-      "symbol": "GAPListOf16BitServiceSolicitationUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf16BitServiceSolicitationUUIDs.swift",
-      "line": 35,
-      "symbol": "GAPListOf16BitServiceSolicitationUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf32BitServiceSolicitationUUIDs.swift",
-      "line": 14,
-      "symbol": "GAPListOf32BitServiceSolicitationUUIDs.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -2570,444 +1947,311 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf32BitServiceSolicitationUUIDs.swift",
-      "line": 23,
-      "symbol": "GAPListOf32BitServiceSolicitationUUIDs.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPListOf32BitServiceSolicitationUUIDs.swift",
-      "line": 31,
-      "symbol": "GAPListOf32BitServiceSolicitationUUIDs.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPManufacturerSpecificData.swift",
       "line": 23,
-      "symbol": "GAPManufacturerSpecificData.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPManufacturerSpecificData.swift",
-      "line": 25,
       "symbol": "GAPManufacturerSpecificData.companyIdentifier",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPManufacturerSpecificData.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "GAPManufacturerSpecificData.additionalData",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPManufacturerSpecificData.swift",
-      "line": 29,
+      "line": 27,
       "symbol": "GAPManufacturerSpecificData.init(companyIdentifier:additionalData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPManufacturerSpecificData.swift",
-      "line": 36,
-      "symbol": "GAPManufacturerSpecificData.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPManufacturerSpecificData.swift",
-      "line": 57,
-      "symbol": "GAPManufacturerSpecificData.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 11,
-      "symbol": "GAPBeaconType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 13,
-      "symbol": "GAPBeaconType.unprovisionedDevice",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 15,
-      "symbol": "GAPBeaconType.secureNetwork",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 18,
-      "symbol": "GAPOOBInformationFlag",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 20,
-      "symbol": "GAPOOBInformationFlag.other",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 22,
-      "symbol": "GAPOOBInformationFlag.electronic",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 24,
-      "symbol": "GAPOOBInformationFlag.machineReadableCode",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 26,
-      "symbol": "GAPOOBInformationFlag.barCode",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 28,
-      "symbol": "GAPOOBInformationFlag.nearFieldCommunication",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 30,
-      "symbol": "GAPOOBInformationFlag.number",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 32,
-      "symbol": "GAPOOBInformationFlag.string",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 34,
-      "symbol": "GAPOOBInformationFlag.onBox",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 36,
-      "symbol": "GAPOOBInformationFlag.insideBox",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 38,
-      "symbol": "GAPOOBInformationFlag.onPieceOfPaper",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 40,
-      "symbol": "GAPOOBInformationFlag.insideManual",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 42,
-      "symbol": "GAPOOBInformationFlag.onDevice",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 83,
-      "symbol": "GAPUnprovisionedDeviceBeacon.init(deviceUUID:oobInformationFlags:uriHash:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 92,
-      "symbol": "GAPUnprovisionedDeviceBeacon.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 119,
-      "symbol": "GAPUnprovisionedDeviceBeacon.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 182,
-      "symbol": "GAPSecureNetworkFlag",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 184,
-      "symbol": "GAPSecureNetworkFlag.keyRefresh",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 186,
-      "symbol": "GAPSecureNetworkFlag.ivUpdate",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 212,
-      "symbol": "GAPSecureNetworkBeacon.beaconType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 214,
-      "symbol": "GAPSecureNetworkBeacon.flags",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 216,
-      "symbol": "GAPSecureNetworkBeacon.networkID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 218,
-      "symbol": "GAPSecureNetworkBeacon.ivIndex",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 220,
-      "symbol": "GAPSecureNetworkBeacon.authenticationValue",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 222,
-      "symbol": "GAPSecureNetworkBeacon.init(flags:networkID:ivIndex:authenticationValue:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 233,
-      "symbol": "GAPSecureNetworkBeacon.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 253,
-      "symbol": "GAPSecureNetworkBeacon.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 286,
-      "symbol": "GAPMeshBeacon.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 288,
-      "symbol": "GAPMeshBeacon.unprovisionedDevice(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 290,
-      "symbol": "GAPMeshBeacon.secureNetwork(_:)",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 292,
-      "symbol": "GAPMeshBeacon.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 319,
-      "symbol": "GAPMeshBeacon.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 338,
+      "line": 85,
       "symbol": "GAPMeshBeaconProtocol.beaconType",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 340,
+      "line": 87,
       "symbol": "GAPMeshBeaconProtocol.init(data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
-      "line": 342,
+      "line": 89,
       "symbol": "GAPMeshBeaconProtocol.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 114,
+      "symbol": "GAPUnprovisionedDeviceBeacon.init(deviceUUID:oobInformationFlags:uriHash:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 123,
+      "symbol": "GAPUnprovisionedDeviceBeacon.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 150,
+      "symbol": "GAPUnprovisionedDeviceBeacon.data",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 213,
+      "symbol": "GAPBeaconType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 215,
+      "symbol": "GAPBeaconType.unprovisionedDevice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 217,
+      "symbol": "GAPBeaconType.secureNetwork",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 220,
+      "symbol": "GAPOOBInformationFlag",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 222,
+      "symbol": "GAPOOBInformationFlag.other",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 224,
+      "symbol": "GAPOOBInformationFlag.electronic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 226,
+      "symbol": "GAPOOBInformationFlag.machineReadableCode",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 228,
+      "symbol": "GAPOOBInformationFlag.barCode",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 230,
+      "symbol": "GAPOOBInformationFlag.nearFieldCommunication",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 232,
+      "symbol": "GAPOOBInformationFlag.number",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 234,
+      "symbol": "GAPOOBInformationFlag.string",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 236,
+      "symbol": "GAPOOBInformationFlag.onBox",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 238,
+      "symbol": "GAPOOBInformationFlag.insideBox",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 240,
+      "symbol": "GAPOOBInformationFlag.onPieceOfPaper",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 242,
+      "symbol": "GAPOOBInformationFlag.insideManual",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 244,
+      "symbol": "GAPOOBInformationFlag.onDevice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 263,
+      "symbol": "GAPSecureNetworkFlag",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 265,
+      "symbol": "GAPSecureNetworkFlag.keyRefresh",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 267,
+      "symbol": "GAPSecureNetworkFlag.ivUpdate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 293,
+      "symbol": "GAPSecureNetworkBeacon.beaconType",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 295,
+      "symbol": "GAPSecureNetworkBeacon.flags",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 297,
+      "symbol": "GAPSecureNetworkBeacon.networkID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 299,
+      "symbol": "GAPSecureNetworkBeacon.ivIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 301,
+      "symbol": "GAPSecureNetworkBeacon.authenticationValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 303,
+      "symbol": "GAPSecureNetworkBeacon.init(flags:networkID:ivIndex:authenticationValue:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 314,
+      "symbol": "GAPSecureNetworkBeacon.init(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshBeacon.swift",
+      "line": 334,
+      "symbol": "GAPSecureNetworkBeacon.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshMessage.swift",
       "line": 24,
-      "symbol": "GAPMeshMessage.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshMessage.swift",
-      "line": 26,
       "symbol": "GAPMeshMessage.message",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshMessage.swift",
-      "line": 28,
+      "line": 26,
       "symbol": "GAPMeshMessage.init(message:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshMessage.swift",
-      "line": 33,
-      "symbol": "GAPMeshMessage.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPMeshMessage.swift",
-      "line": 43,
-      "symbol": "GAPMeshMessage.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 41,
-      "symbol": "GAPPBADV.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 43,
+      "line": 35,
       "symbol": "GAPPBADV.linkID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 45,
+      "line": 37,
       "symbol": "GAPPBADV.transactionNumber",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 47,
+      "line": 39,
       "symbol": "GAPPBADV.genericProvisioningPDU",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 49,
+      "line": 41,
       "symbol": "GAPPBADV.init(linkID:transactionNumber:genericProvisioningPDU:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 56,
-      "symbol": "GAPPBADV.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPBADV.swift",
-      "line": 75,
-      "symbol": "GAPPBADV.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPublicTargetAddress.swift",
       "line": 24,
-      "symbol": "GAPPublicTargetAddress.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPublicTargetAddress.swift",
-      "line": 26,
       "symbol": "GAPPublicTargetAddress.addresses",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPublicTargetAddress.swift",
-      "line": 28,
+      "line": 26,
       "symbol": "GAPPublicTargetAddress.init(addresses:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPublicTargetAddress.swift",
-      "line": 33,
-      "symbol": "GAPPublicTargetAddress.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPPublicTargetAddress.swift",
-      "line": 53,
-      "symbol": "GAPPublicTargetAddress.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -3020,267 +2264,64 @@
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPRandomTargetAddress.swift",
       "line": 23,
-      "symbol": "GAPRandomTargetAddress.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPRandomTargetAddress.swift",
-      "line": 25,
       "symbol": "GAPRandomTargetAddress.addresses",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPRandomTargetAddress.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "GAPRandomTargetAddress.init(addresses:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPRandomTargetAddress.swift",
-      "line": 32,
-      "symbol": "GAPRandomTargetAddress.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPRandomTargetAddress.swift",
-      "line": 55,
-      "symbol": "GAPRandomTargetAddress.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": null,
-      "symbol": "GAPSecurityManagerOOBFlags",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": null,
-      "symbol": "GAPSecurityManagerOOBFlags",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": null,
-      "symbol": "GAPSecurityManagerOOBFlags",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": 48,
-      "symbol": "GAPSecurityManagerOOBFlags",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": 52,
-      "symbol": "GAPSecurityManagerOOBFlags.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": 54,
+      "line": 20,
       "symbol": "GAPSecurityManagerOOBFlags.flags",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": 56,
+      "line": 22,
       "symbol": "GAPSecurityManagerOOBFlags.init(flags:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": 61,
-      "symbol": "GAPSecurityManagerOOBFlags.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerOOBFlags.swift",
-      "line": 69,
-      "symbol": "GAPSecurityManagerOOBFlags.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerTKValue.swift",
       "line": 18,
-      "symbol": "GAPSecurityManagerTKValue.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerTKValue.swift",
-      "line": 20,
       "symbol": "GAPSecurityManagerTKValue.uuid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerTKValue.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "GAPSecurityManagerTKValue.init(uuid:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerTKValue.swift",
-      "line": 27,
-      "symbol": "GAPSecurityManagerTKValue.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSecurityManagerTKValue.swift",
-      "line": 37,
-      "symbol": "GAPSecurityManagerTKValue.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData128BitUUID.swift",
-      "line": 19,
-      "symbol": "GAPServiceData128BitUUID.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData128BitUUID.swift",
-      "line": 21,
-      "symbol": "GAPServiceData128BitUUID.uuid",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData128BitUUID.swift",
-      "line": 22,
-      "symbol": "GAPServiceData128BitUUID.serviceData",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData128BitUUID.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "GAPServiceData128BitUUID.init(uuid:serviceData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData128BitUUID.swift",
-      "line": 30,
-      "symbol": "GAPServiceData128BitUUID.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData128BitUUID.swift",
-      "line": 41,
-      "symbol": "GAPServiceData128BitUUID.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData16BitUUID.swift",
-      "line": 19,
-      "symbol": "GAPServiceData16BitUUID.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData16BitUUID.swift",
-      "line": 21,
-      "symbol": "GAPServiceData16BitUUID.uuid",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData16BitUUID.swift",
-      "line": 22,
-      "symbol": "GAPServiceData16BitUUID.serviceData",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData16BitUUID.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "GAPServiceData16BitUUID.init(uuid:serviceData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData16BitUUID.swift",
-      "line": 30,
-      "symbol": "GAPServiceData16BitUUID.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData16BitUUID.swift",
-      "line": 41,
-      "symbol": "GAPServiceData16BitUUID.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData32BitUUID.swift",
-      "line": 19,
-      "symbol": "GAPServiceData32BitUUID.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData32BitUUID.swift",
-      "line": 21,
-      "symbol": "GAPServiceData32BitUUID.uuid",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData32BitUUID.swift",
-      "line": 22,
-      "symbol": "GAPServiceData32BitUUID.serviceData",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData32BitUUID.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "GAPServiceData32BitUUID.init(uuid:serviceData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData32BitUUID.swift",
-      "line": 30,
-      "symbol": "GAPServiceData32BitUUID.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPServiceData32BitUUID.swift",
-      "line": 41,
-      "symbol": "GAPServiceData32BitUUID.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPShortLocalName.swift",
-      "line": 20,
-      "symbol": "GAPShortLocalName.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -3298,388 +2339,185 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPShortLocalName.swift",
-      "line": 29,
-      "symbol": "GAPShortLocalName.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPShortLocalName.swift",
-      "line": 37,
-      "symbol": "GAPShortLocalName.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingHashC.swift",
       "line": 18,
-      "symbol": "GAPSimplePairingHashC.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingHashC.swift",
-      "line": 20,
       "symbol": "GAPSimplePairingHashC.uuid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingHashC.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "GAPSimplePairingHashC.init(uuid:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingHashC.swift",
-      "line": 27,
-      "symbol": "GAPSimplePairingHashC.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingHashC.swift",
-      "line": 37,
-      "symbol": "GAPSimplePairingHashC.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingRandomizerR.swift",
       "line": 18,
-      "symbol": "GAPSimplePairingRandomizerR.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingRandomizerR.swift",
-      "line": 20,
       "symbol": "GAPSimplePairingRandomizerR.uuid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingRandomizerR.swift",
-      "line": 22,
+      "line": 20,
       "symbol": "GAPSimplePairingRandomizerR.init(uuid:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingRandomizerR.swift",
-      "line": 27,
-      "symbol": "GAPSimplePairingRandomizerR.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSimplePairingRandomizerR.swift",
-      "line": 37,
-      "symbol": "GAPSimplePairingRandomizerR.data",
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
+      "line": 35,
+      "symbol": "GAPSlaveConnectionIntervalRange.range",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 36,
+      "line": 37,
+      "symbol": "GAPSlaveConnectionIntervalRange.init(range:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
+      "line": 51,
       "symbol": "GAPSlaveConnectionIntervalRange.min",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 38,
+      "line": 53,
       "symbol": "GAPSlaveConnectionIntervalRange.max",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 40,
+      "line": 55,
       "symbol": "GAPSlaveConnectionIntervalRange.undefined",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 42,
-      "symbol": "GAPSlaveConnectionIntervalRange.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 44,
-      "symbol": "GAPSlaveConnectionIntervalRange.intervalRange",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 46,
-      "symbol": "GAPSlaveConnectionIntervalRange.init(intervalRange:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 55,
-      "symbol": "GAPSlaveConnectionIntervalRange.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPSlaveConnectionIntervalRange.swift",
-      "line": 66,
-      "symbol": "GAPSlaveConnectionIntervalRange.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 24,
-      "symbol": "GAPTransportDiscoveryBlock.organizationID",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 26,
-      "symbol": "GAPTransportDiscoveryBlock.flags",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 28,
-      "symbol": "GAPTransportDiscoveryBlock.dataLength",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 30,
-      "symbol": "GAPTransportDiscoveryBlock.transportData",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 32,
-      "symbol": "GAPTransportDiscoveryBlock.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 69,
-      "symbol": "GAPTransportDiscoveryData.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 71,
+      "line": 21,
       "symbol": "GAPTransportDiscoveryData.code",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 73,
+      "line": 23,
       "symbol": "GAPTransportDiscoveryData.blocks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 75,
+      "line": 25,
       "symbol": "GAPTransportDiscoveryData.init(code:blocks:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 81,
-      "symbol": "GAPTransportDiscoveryData.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 110,
-      "symbol": "GAPTransportDiscoveryData.data",
+      "line": 90,
+      "symbol": "GAPTransportDiscoveryBlock.organizationID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 133,
-      "symbol": "GAPTransportDiscoveryDataFlag",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "line": 92,
+      "symbol": "GAPTransportDiscoveryBlock.flags",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTransportDiscoveryData.swift",
-      "line": 150,
-      "symbol": "GAPTransportDiscoveryDataFlag.data",
+      "line": 94,
+      "symbol": "GAPTransportDiscoveryBlock.transportData",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTxPowerLevel.swift",
-      "line": 23,
-      "symbol": "GAPTxPowerLevel.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTxPowerLevel.swift",
-      "line": 25,
+      "line": 19,
       "symbol": "GAPTxPowerLevel.powerLevel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTxPowerLevel.swift",
-      "line": 27,
+      "line": 21,
       "symbol": "GAPTxPowerLevel.init(powerLevel:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTxPowerLevel.swift",
-      "line": 41,
-      "symbol": "GAPTxPowerLevel.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPTxPowerLevel.swift",
-      "line": 51,
-      "symbol": "GAPTxPowerLevel.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPURI.swift",
-      "line": 20,
-      "symbol": "GAPURI.dataType",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPURI.swift",
-      "line": 22,
+      "line": 18,
       "symbol": "GAPURI.uri",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPURI.swift",
-      "line": 24,
+      "line": 20,
       "symbol": "GAPURI.init(uri:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPURI.swift",
-      "line": 29,
-      "symbol": "GAPURI.init(data:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GAPURI.swift",
-      "line": 38,
-      "symbol": "GAPURI.data",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 23,
-      "symbol": "GATT.UUID.primaryService",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 24,
-      "symbol": "GATT.UUID.secondaryService",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 25,
-      "symbol": "GATT.UUID.include",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 26,
-      "symbol": "GATT.UUID.characteristic",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 68,
+      "line": 49,
       "symbol": "GATT.CharacteristicProperty.broadcast",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 69,
+      "line": 50,
       "symbol": "GATT.CharacteristicProperty.read",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 70,
+      "line": 51,
       "symbol": "GATT.CharacteristicProperty.writeWithoutResponse",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 71,
+      "line": 52,
       "symbol": "GATT.CharacteristicProperty.write",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 72,
+      "line": 53,
       "symbol": "GATT.CharacteristicProperty.notify",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 73,
+      "line": 54,
       "symbol": "GATT.CharacteristicProperty.indicate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 78,
+      "line": 59,
       "symbol": "GATT.CharacteristicProperty.extendedProperties",
       "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATT.swift",
-      "line": 93,
-      "symbol": "GATT.CharacteristicProperty.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -4938,209 +3776,202 @@
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 18,
-      "symbol": "GATTCharacteristicFormatType.length",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "symbol": "GATTCharacteristicFormatType.rfu",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 19,
+      "symbol": "GATTCharacteristicFormatType.boolean",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 20,
+      "symbol": "GATTCharacteristicFormatType.bit2",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 21,
+      "symbol": "GATTCharacteristicFormatType.nibble",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 22,
+      "symbol": "GATTCharacteristicFormatType.uint8",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 23,
+      "symbol": "GATTCharacteristicFormatType.uint12",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 24,
+      "symbol": "GATTCharacteristicFormatType.uint16",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 25,
+      "symbol": "GATTCharacteristicFormatType.uint24",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 26,
+      "symbol": "GATTCharacteristicFormatType.uint32",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 27,
+      "symbol": "GATTCharacteristicFormatType.uint48",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 28,
+      "symbol": "GATTCharacteristicFormatType.uint64",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
+      "line": 29,
+      "symbol": "GATTCharacteristicFormatType.uint128",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 30,
-      "symbol": "GATTCharacteristicFormatType.rfu",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint8",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 31,
-      "symbol": "GATTCharacteristicFormatType.boolean",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint12",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 32,
-      "symbol": "GATTCharacteristicFormatType.bit2",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint16",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 33,
-      "symbol": "GATTCharacteristicFormatType.nibble",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint24",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 34,
-      "symbol": "GATTCharacteristicFormatType.uint8",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint32",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 35,
-      "symbol": "GATTCharacteristicFormatType.uint12",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint48",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 36,
-      "symbol": "GATTCharacteristicFormatType.uint16",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint64",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 37,
-      "symbol": "GATTCharacteristicFormatType.uint24",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sint128",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 38,
-      "symbol": "GATTCharacteristicFormatType.uint32",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.float32",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 39,
-      "symbol": "GATTCharacteristicFormatType.uint48",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.float64",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 40,
-      "symbol": "GATTCharacteristicFormatType.uint64",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.sfloat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 41,
-      "symbol": "GATTCharacteristicFormatType.uint128",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.float",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 42,
-      "symbol": "GATTCharacteristicFormatType.sint8",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.duint16",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 43,
-      "symbol": "GATTCharacteristicFormatType.sint12",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.utf8s",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 44,
-      "symbol": "GATTCharacteristicFormatType.sint16",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.utf16s",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 45,
-      "symbol": "GATTCharacteristicFormatType.sint24",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 46,
-      "symbol": "GATTCharacteristicFormatType.sint32",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 47,
-      "symbol": "GATTCharacteristicFormatType.sint48",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 48,
-      "symbol": "GATTCharacteristicFormatType.sint64",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 49,
-      "symbol": "GATTCharacteristicFormatType.sint128",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 50,
-      "symbol": "GATTCharacteristicFormatType.float32",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 51,
-      "symbol": "GATTCharacteristicFormatType.float64",
-      "symbol_kind": "source.lang.swift.decl.var.static",
+      "symbol": "GATTCharacteristicFormatType.struct",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
       "line": 52,
-      "symbol": "GATTCharacteristicFormatType.sfloat",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 53,
-      "symbol": "GATTCharacteristicFormatType.float",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 54,
-      "symbol": "GATTCharacteristicFormatType.duint16",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 55,
-      "symbol": "GATTCharacteristicFormatType.utf8s",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 56,
-      "symbol": "GATTCharacteristicFormatType.utf16s",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 57,
-      "symbol": "GATTCharacteristicFormatType.struct",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTCharacteristicFormatType.swift",
-      "line": 70,
       "symbol": "GATTCharacteristicFormatType.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -5189,147 +4020,154 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 54,
+      "line": 52,
       "symbol": "GATTClient.init(socket:maximumTransmissionUnit:log:writePending:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1147,
+      "line": 1145,
       "symbol": "GATTClient.Error",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1149,
+      "line": 1147,
       "symbol": "GATTClient.Response",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1151,
+      "line": 1149,
       "symbol": "GATTClient.Notification",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1154,
+      "line": 1152,
       "symbol": "GATTClientError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1177,
+      "line": 1175,
       "symbol": "GATTClientError.UserInfoKey",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1179,
+      "line": 1177,
       "symbol": "GATTClientError.UserInfoKey.response",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1180,
+      "line": 1178,
       "symbol": "GATTClientError.UserInfoKey.characteristic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1232,
+      "line": 1230,
       "symbol": "GATTClientResponse",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1234,
+      "line": 1232,
       "symbol": "GATTClientResponse.error(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1235,
+      "line": 1233,
       "symbol": "GATTClientResponse.value(_:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1243,
+      "line": 1241,
       "symbol": "GATTClient.Service.uuid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1245,
-      "symbol": "GATTClient.Service.type",
+      "line": 1243,
+      "symbol": "GATTClient.Service.isPrimary",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1247,
+      "line": 1245,
       "symbol": "GATTClient.Service.handle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1249,
+      "line": 1247,
       "symbol": "GATTClient.Service.end",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1255,
-      "symbol": "GATTClient.Characteristic.Property",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1257,
-      "symbol": "GATTClient.Characteristic.uuid",
+      "line": 1250,
+      "symbol": "GATTClient.Service.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
       "line": 1259,
+      "symbol": "GATTClient.Characteristic.Property",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
+      "line": 1261,
+      "symbol": "GATTClient.Characteristic.uuid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
+      "line": 1263,
       "symbol": "GATTClient.Characteristic.properties",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1261,
+      "line": 1265,
       "symbol": "GATTClient.Characteristic.handle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1267,
+      "line": 1271,
       "symbol": "GATTClient.Descriptor.uuid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTClient.swift",
-      "line": 1269,
+      "line": 1273,
       "symbol": "GATTClient.Descriptor.handle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -5875,56 +4713,56 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 25,
+      "line": 23,
       "symbol": "GATTDatabase.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 27,
+      "line": 25,
       "symbol": "GATTDatabase.init(services:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 93,
+      "line": 91,
       "symbol": "GATTDatabase.add(service:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 258,
+      "line": 271,
       "symbol": "GATTDatabase.Attribute.handle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 260,
+      "line": 273,
       "symbol": "GATTDatabase.Attribute.uuid",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 262,
+      "line": 275,
       "symbol": "GATTDatabase.Attribute.permissions",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 264,
+      "line": 277,
       "symbol": "GATTDatabase.Attribute.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTDatabase.swift",
-      "line": 657,
+      "line": 665,
       "symbol": "GATT.Database",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
@@ -7002,7 +5840,7 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/GATTServer.swift",
-      "line": 56,
+      "line": 55,
       "symbol": "GATTServer.init(socket:maximumTransmissionUnit:maximumPreparedWrites:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -8485,13 +7323,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEConnectionComplete.swift",
-      "line": 36,
-      "symbol": "HCILEConnectionComplete.Status",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEConnectionUpdateComplete.swift",
       "line": 29,
       "symbol": "HCILEConnectionUpdateComplete.connInterval",
@@ -8528,30 +7359,23 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILECreateConnection.swift",
-      "line": 65,
+      "line": 62,
       "symbol": "HCILECreateConnection.command",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILECreateConnection.swift",
-      "line": 66,
-      "symbol": "HCILECreateConnection.length",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILECreateConnection.swift",
-      "line": 68,
-      "symbol": "HCILECreateConnection.SupervisionTimeout",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILECreateConnection.swift",
-      "line": 123,
+      "line": 117,
       "symbol": "HCILECreateConnection.init(scanInterval:scanWindow:initiatorFilterPolicy:peerAddressType:peerAddress:ownAddressType:connectionInterval:connectionLatency:supervisionTimeout:connectionLength:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILECreateConnection.swift",
+      "line": 151,
+      "symbol": "HCILECreateConnection.length",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
@@ -8619,28 +7443,28 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEEncrypt.swift",
-      "line": 39,
+      "line": 41,
       "symbol": "HCILEEncrypt.command",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEEncrypt.swift",
-      "line": 49,
+      "line": 51,
       "symbol": "HCILEEncrypt.init(key:plainText:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEEncrypt.swift",
-      "line": 106,
+      "line": 83,
       "symbol": "HCILEEncryptReturn.command",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEEncrypt.swift",
-      "line": 114,
+      "line": 91,
       "symbol": "HCILEEncryptReturn.init(data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -9417,28 +8241,28 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEReadChannelMap.swift",
-      "line": 62,
+      "line": 63,
       "symbol": "HCILEReadChannelMap.ReturnParameter",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEReadChannelMap.swift",
-      "line": 72,
+      "line": 73,
       "symbol": "HCILEReadChannelMapReturnParameter.command",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEReadChannelMap.swift",
-      "line": 76,
+      "line": 77,
       "symbol": "HCILEReadChannelMapReturnParameter.connectionHandle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEReadChannelMap.swift",
-      "line": 85,
+      "line": 86,
       "symbol": "HCILEReadChannelMapReturnParameter.init(data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -10111,14 +8935,14 @@
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILERemoveDeviceToPeriodicAdvertiserList.swift",
       "line": 50,
-      "symbol": "HCILERemoveDeviceToPeriodicAdvertiserList.advertisingSid",
+      "symbol": "HCILERemoveDeviceToPeriodicAdvertiserList.advertisingSID",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILERemoveDeviceToPeriodicAdvertiserList.swift",
       "line": 52,
-      "symbol": "HCILERemoveDeviceToPeriodicAdvertiserList.init(advertiserAddressType:address:advertisingSid:)",
+      "symbol": "HCILERemoveDeviceToPeriodicAdvertiserList.init(advertiserAddressType:address:advertisingSID:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -10229,63 +9053,63 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 33,
-      "symbol": "HCILESetAdvertisingParameters.length",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 60,
+      "line": 59,
       "symbol": "HCILESetAdvertisingParameters.channelMap",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 62,
+      "line": 61,
       "symbol": "HCILESetAdvertisingParameters.filterPolicy",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 64,
+      "line": 63,
       "symbol": "HCILESetAdvertisingParameters.init(interval:advertisingType:ownAddressType:directAddresssType:directAddress:channelMap:filterPolicy:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 108,
+      "line": 87,
+      "symbol": "HCILESetAdvertisingParameters.length",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
+      "line": 121,
       "symbol": "HCILESetAdvertisingParameters.AdvertisingType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 122,
+      "line": 135,
       "symbol": "HCILESetAdvertisingParameters.AdvertisingType.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 159,
+      "line": 172,
       "symbol": "HCILESetAdvertisingParameters.FilterPolicy.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 161,
+      "line": 174,
       "symbol": "HCILESetAdvertisingParameters.FilterPolicy.init(whiteListScan:whiteListConnect:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILESetAdvertisingParameters.swift",
-      "line": 173,
+      "line": 186,
       "symbol": "HCILESetAdvertisingParameters.FilterPolicy.whiteList",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -11076,15 +9900,22 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEStartEncryption.swift",
-      "line": 110,
+      "line": 109,
       "symbol": "HCILEStartEncryption.command",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEStartEncryption.swift",
-      "line": 124,
+      "line": 123,
       "symbol": "HCILEStartEncryption.init(connectionHandle:randomNumber:encryptedDiversifier:longTermKey:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/HCILEStartEncryption.swift",
+      "line": 135,
+      "symbol": "HCILEStartEncryption.init(connectionHandle:encryptedDiversifier:longTermKey:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -13400,14 +12231,70 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
-      "line": 195,
+      "line": 49,
+      "symbol": "LowEnergyAdvertisingData.capacity",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 69,
+      "symbol": "LowEnergyAdvertisingData.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 78,
+      "symbol": "LowEnergyAdvertisingData.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 93,
+      "symbol": "LowEnergyAdvertisingData.append(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 100,
+      "symbol": "LowEnergyAdvertisingData.+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 105,
+      "symbol": "LowEnergyAdvertisingData.append(contentsOf:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 117,
+      "symbol": "LowEnergyAdvertisingData.+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 122,
+      "symbol": "LowEnergyAdvertisingData.append(_:count:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
+      "line": 226,
       "symbol": "LowEnergyAdvertisingData.init(data:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyAdvertisingData.swift",
-      "line": 238,
+      "line": 231,
       "symbol": "LowEnergyAdvertisingData.data",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -14023,14 +12910,14 @@
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyWhiteListDevice.swift",
-      "line": 29,
+      "line": 32,
       "symbol": "LowEnergyWhiteListDevice.addressType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/LowEnergyWhiteListDevice.swift",
-      "line": 37,
+      "line": 40,
       "symbol": "LowEnergyWhiteListDevice.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -14495,20 +13382,6 @@
       "line": 11,
       "symbol": "UnitIdentifier",
       "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/UnsafeDataConvertible.swift",
-      "line": 17,
-      "symbol": "UnsafeDataConvertible.+=(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Volumes/TOSHIBA/Developer/Bluetooth/Bluetooth/Sources/UnsafeDataConvertible.swift",
-      "line": 30,
-      "symbol": "String.+=(_:_:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
