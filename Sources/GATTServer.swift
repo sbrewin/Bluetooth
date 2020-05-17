@@ -192,17 +192,21 @@ public final class GATTServer {
     private func checkPermissions(_ permissions: BitMaskOptionSet<ATT.AttributePermission>,
                                   _ attribute: GATTDatabase.Attribute) -> ATT.Error? {
         
-        guard attribute.permissions != permissions else { return nil }
+        guard attribute.permissions != permissions else {
+            log?("Attribute permissions are absent")
+            return nil
+        }
+        log?("Permissions: \(permissions), Attribute permissions: \(attribute.permissions)")
         
         // check permissions
         
         if permissions.contains(.read) && !attribute.permissions.contains(.read) {
-            
+            log?("Read not permitted")
             return .readNotPermitted
         }
         
         if permissions.contains(.write) && !attribute.permissions.contains(.write) {
-            
+            log?("Write not permitted")
             return .writeNotPermitted
         }
         
@@ -213,17 +217,17 @@ public final class GATTServer {
         if attribute.permissions.contains(.readAuthentication)
             || attribute.permissions.contains(.writeAuthentication)
             && security < .high {
-            
+            log?("Insufficient authentication")
             return .insufficientAuthentication
         }
         
         if attribute.permissions.contains(.readEncrypt)
             || attribute.permissions.contains(.writeEncrypt)
             && security < .medium {
-            
+            og?("Insufficient encryption")
             return .insufficientEncryption
         }
-        
+        log?("Permission granted")
         return nil
     }
     
