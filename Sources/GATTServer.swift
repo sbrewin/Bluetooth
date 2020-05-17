@@ -224,7 +224,7 @@ public final class GATTServer {
         if attribute.permissions.contains(.readEncrypt)
             || attribute.permissions.contains(.writeEncrypt)
             && security < .medium {
-            og?("Insufficient encryption")
+            log?("Insufficient encryption")
             return .insufficientEncryption
         }
         log?("Permission granted")
