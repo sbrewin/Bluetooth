@@ -67,13 +67,13 @@ public final class GATTServer {
     
     /// Performs the actual IO for sending data.
     public func read() throws -> Bool {
-        
+        log?("Reading data")
         return try connection.read()
     }
     
     /// Performs the actual IO for recieving data.
     public func write() throws -> Bool {
-        
+        log?("Writing data")
         return try connection.write()
     }
     
@@ -193,7 +193,7 @@ public final class GATTServer {
                                   _ attribute: GATTDatabase.Attribute) -> ATT.Error? {
         
         guard attribute.permissions != permissions else {
-            log?("Attribute permissions are absent")
+            log?("Permission granted")
             return nil
         }
         log?("Permissions: \(permissions), Attribute permissions: \(attribute.permissions)")
