@@ -68,19 +68,19 @@ public final class GATTServer {
     
     /// Performs the actual IO for sending data.
     public func read() throws -> Bool {
-        //log?("Reading data")
+        //log?("GATTServer reading data")
         return try connection.read()
     }
     
     /// Performs the actual IO for recieving data.
     public func write() throws -> Bool {
-        log?("Writing data")
+        log?("GATTServer: Writing data")
         return try connection.write()
     }
     
     /// Update the value of a characteristic attribute.
     public func writeValue(_ value: Data, forCharacteristic handle: UInt16) {
-        
+        log?("GATTServer: Updating characterteristic handle \(handle)")
         database.write(value, forAttribute: handle)
         
         didWriteAttribute(handle, isLocalWrite: true)

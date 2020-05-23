@@ -119,18 +119,18 @@ internal final class ATTConnection {
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
         
-        log?("Attempt write")
+        log?("ATTConnection: Attempt write")
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
         
-        log?("Sending data... (\(sendOperation.data.count) bytes)")
+        log?("ATTConnection: Sending data... (\(sendOperation.data.count) bytes)")
         
         try socket.send(sendOperation.data)
         
         let opcode = sendOperation.opcode
         
-        log?("Did write \(opcode)")
+        log?("ATTConnection: Did write \(opcode)")
         
         /* Based on the operation type, set either the pending request or the
         * pending indication. If it came from the write queue, then there is
