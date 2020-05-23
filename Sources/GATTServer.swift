@@ -60,6 +60,7 @@ public final class GATTServer {
         self.maximumPreparedWrites = maximumPreparedWrites
         self.preferredMaximumTransmissionUnit = maximumTransmissionUnit
         self.connection = ATTConnection(socket: socket)
+        self.connection.log = log
         self.registerATTHandlers()
     }
     
