@@ -184,7 +184,7 @@ public final class GATTServer {
     @inline(__always)
     private func send (_ notification: ATTHandleValueNotification) {
         
-        log?("Notification: \(notification)")
+        log?("GATTServer: Notification: \(notification)")
         
         guard let _ = connection.send(notification)
             else { fatalError("Could not add PDU to queue: \(notification)") }
@@ -277,13 +277,16 @@ public final class GATTServer {
     }
     
     private func didWriteAttribute(_ attributeHandle: UInt16, isLocalWrite: Bool = false) {
-        
+        log?("GATTServer: didWriteAttribute handle \(attributeHandle), isLocalWrite: \(isLocalWrite)")
         let (group, attribute) = database.attributeGroup(for: attributeHandle)
         assert(attribute.handle == attributeHandle)
         
         guard let service = group.service,
             let characteristic = service.characteristics.first(where: { $0.uuid == attribute.uuid })
-            else { return }
+            else {
+                log?("GATTServer: characteristic not found, handle: \(attributeHandle)")
+                return
+            }
         
         // notify connected client if write is from server and not client write request
         if isLocalWrite {
@@ -298,7 +301,7 @@ public final class GATTServer {
                 if descriptor.configuration.contains(.notify) {
                     
                     let notification = ATTHandleValueNotification(attribute: attribute, maximumTransmissionUnit: connection.maximumTransmissionUnit)
-                    
+                    log?("GATTServer: sending notification: \(notification)")
                     send(notification)
                 }
                 
@@ -306,10 +309,10 @@ public final class GATTServer {
                 if descriptor.configuration.contains(.indicate) {
                     
                     let indication = ATTHandleValueIndication(attribute: attribute, maximumTransmissionUnit: connection.maximumTransmissionUnit)
-                    
+                    log?("GATTServer: sending indication: \(indication)")
                     send(indication) { [unowned self] (confirmation) in
                         
-                        self.log?("Confirmation: \(confirmation)")
+                        self.log?("GATTServer: Confirmation: \(confirmation)")
                     }
                 }
             }
