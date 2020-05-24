@@ -319,6 +319,15 @@ public final class GATTServer {
                         self.log?("GATTServer: Confirmation: \(confirmation)")
                     }
                 }
+            } else {
+                log?("GATTServer: clientConfigurationDescriptor not found! Here are the descriptors...")
+                characteristic.descriptors.forEach({
+                    descriptor in
+                    log?("GATTServer: descriptor uuid: \(descriptor.uuid)")
+                })
+                let notification = ATTHandleValueNotification(attribute: attribute, maximumTransmissionUnit: connection.maximumTransmissionUnit)
+                log?("GATTServer: sending notification anyway! notification:  \(notification)")
+                send(notification)
             }
             
         } else {
