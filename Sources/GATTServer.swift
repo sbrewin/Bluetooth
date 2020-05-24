@@ -293,9 +293,13 @@ public final class GATTServer {
             
             // Client configuration
             if let clientConfigurationDescriptor = characteristic.descriptors.first(where: { $0.uuid == .clientCharacteristicConfiguration }) {
+                log?("GATTServer: clientConfigurationDescriptor: \(clientConfigurationDescriptor)")
                 
                 guard let descriptor = GATTClientCharacteristicConfiguration(data: clientConfigurationDescriptor.value)
-                    else { return }
+                    else {
+                        return
+                    }
+                log?("GATTServer: descriptor: \(descriptor), configuration: \(descriptor.configuration)")
                 
                 // notify
                 if descriptor.configuration.contains(.notify) {
