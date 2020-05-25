@@ -119,7 +119,7 @@ internal final class ATTConnection {
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
         
-        log?("ATTConnection: Attempt write")
+        log?("ATTConnection: Attempting write")
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
@@ -211,11 +211,11 @@ internal final class ATTConnection {
     /// - Returns: Identifier of queued send operation or `nil` if the PDU cannot be sent.
     @discardableResult
     public func send <PDU: ATTProtocolDataUnit> (_ pdu: PDU, response: (callback: (AnyATTResponse) -> (), ATTProtocolDataUnit.Type)? = nil) -> UInt? {
-        
+
         let attributeOpcode = PDU.attributeOpcode
-        
         let type = attributeOpcode.type
         
+        log?("ATTConection: pdu: \(pdu), type: \(type)")
         // Only request and indication PDUs should have response callbacks. 
         switch type {
             
@@ -235,8 +235,10 @@ internal final class ATTConnection {
         }
         
         /// unable to encode PDU
-        guard let encodedPDU = encode(PDU: pdu)
-            else { return nil }
+        guard let encodedPDU = encode(PDU: pdu) else {
+            log?("ATTConection: Unable to encode PDU: \(pdu)")
+            return nil
+        }
         
         let identifier = nextSendOpcodeID
         
@@ -244,7 +246,7 @@ internal final class ATTConnection {
                                           opcode: attributeOpcode,
                                           data: encodedPDU,
                                           response: response)
-        
+        log?("ATTConection: sendOpcode: \(sendOpcode)")
         // increment ID
         nextSendOpcodeID += 1
         
@@ -252,23 +254,25 @@ internal final class ATTConnection {
         switch type {
             
         case .request:
-            
+            log?("ATTConection: appending to requestQueue")
             requestQueue.append(sendOpcode)
             
         case .indication:
-            
+            log?("ATTConection: appending to indicationQueue")
             indicationQueue.append(sendOpcode)
             
         case .response,
              .command,
              .confirmation,
              .notification:
-            
+            log?("ATTConection: appending to writeQueue")
             writeQueue.append(sendOpcode)
         }
         
+        log?("ATTConection: write pending...")
         writePending?()
-        
+
+        log?("ATTConection: sendOpcode.identifier \(sendOpcode.identifier)")
         return sendOpcode.identifier
     }
     
