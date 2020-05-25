@@ -124,7 +124,7 @@ internal final class ATTConnection {
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
         
-        log?("ATTConnection: Sending data... (\(sendOperation.data.hexEncodedString())")
+        log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
         
         try socket.send(sendOperation.data)
         
