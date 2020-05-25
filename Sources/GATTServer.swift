@@ -184,8 +184,8 @@ public final class GATTServer {
     @inline(__always)
     private func send (_ notification: ATTHandleValueNotification) {
         
-        log?("GATTServer: Notification: \(notification)")
-        
+        log?("GATTServer: send notification: \(notification)")
+        self.connection.log = log // Ensure the connection log is set
         guard let _ = connection.send(notification)
             else { fatalError("Could not add PDU to queue: \(notification)") }
     }
