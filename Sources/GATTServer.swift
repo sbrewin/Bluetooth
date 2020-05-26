@@ -68,13 +68,14 @@ public final class GATTServer {
     
     /// Performs the actual IO for sending data.
     public func read() throws -> Bool {
-        //log?("GATTServer reading data")
+        //log?("GATTServer: Reading data")
         return try connection.read()
     }
     
     /// Performs the actual IO for recieving data.
     public func write() throws -> Bool {
         log?("GATTServer: Writing data")
+        connection.log = log // Ensure the log is setup
         return try connection.write()
     }
     
