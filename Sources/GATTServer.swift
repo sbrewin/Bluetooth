@@ -291,11 +291,7 @@ public final class GATTServer {
         
         // notify connected client if write is from server and not client write request
         if isLocalWrite {
-            log?("GATTServer: clientConfigurationDescriptors... (count: \(characteristic.descriptors.count))")
-            characteristic.descriptors.forEach({descriptor in
-                log?("GATTServer: clientConfigurationDescriptor: \(descriptor)")
-            })
-            
+            log?("GATTServer: local write to characteristic: \(characteristic)")
             // Client configuration
             if let clientConfigurationDescriptor = characteristic.descriptors.first(where: { $0.uuid == .clientCharacteristicConfiguration }) {
                 log?("GATTServer: clientConfigurationDescriptor: \(clientConfigurationDescriptor)")
