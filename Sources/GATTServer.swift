@@ -328,7 +328,10 @@ public final class GATTServer {
                 })
                 let notification = ATTHandleValueNotification(attribute: attribute, maximumTransmissionUnit: connection.maximumTransmissionUnit)
                 log?("GATTServer: sending notification anyway! notification:  \(notification)")
-                send(notification)
+                send(indication) { [unowned self] (confirmation) in
+                    
+                    self.log?("GATTServer: Confirmation: \(confirmation)")
+                }
             }
             
         } else {
