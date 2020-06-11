@@ -69,6 +69,7 @@ public final class GATTServer {
     /// Performs the actual IO for sending data.
     public func read() throws -> Bool {
         //log?("GATTServer: Reading data")
+        connection.log = log // Ensure the log is setup
         return try connection.read()
     }
     
@@ -328,10 +329,7 @@ public final class GATTServer {
                 })
                 let notification = ATTHandleValueNotification(attribute: attribute, maximumTransmissionUnit: connection.maximumTransmissionUnit)
                 log?("GATTServer: sending notification anyway! notification:  \(notification)")
-                send(indication) { [unowned self] (confirmation) in
-                    
-                    self.log?("GATTServer: Confirmation: \(confirmation)")
-                }
+                send(indication)
             }
             
         } else {
