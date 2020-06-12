@@ -201,6 +201,13 @@ public final class GATTServer {
         }
         log?("Permissions: \(permissions), Attribute permissions: \(attribute.permissions)")
         
+        guard attribute.uuid != .clientCharacteristicConfiguration else {
+            log?("Permission granted, UUID: \(attribute.uuid.name)")
+            return nil
+        }
+        
+        log?("Permissions: \(permissions), Attribute permissions: \(attribute.permissions)")
+        
         // check permissions
         
         if permissions.contains(.read) && !attribute.permissions.contains(.read) {
