@@ -196,7 +196,7 @@ public final class GATTServer {
                                   _ attribute: GATTDatabase.Attribute) -> ATT.Error? {
         
         guard attribute.permissions != permissions else {
-            log?("Permission granted")
+            log?("Permission granted, UUID: \(attribute.uuid.name)")
             return nil
         }
         log?("Permissions: \(permissions), Attribute permissions: \(attribute.permissions)")
@@ -204,12 +204,12 @@ public final class GATTServer {
         // check permissions
         
         if permissions.contains(.read) && !attribute.permissions.contains(.read) {
-            log?("Read not permitted")
+            log?("Read not permitted, UUID: \(attribute.uuid.name)")
             return .readNotPermitted
         }
         
         if permissions.contains(.write) && !attribute.permissions.contains(.write) {
-            log?("Write not permitted")
+            log?("Write not permitted, UUID: \(attribute.uuid.name)")
             return .writeNotPermitted
         }
         
@@ -220,17 +220,17 @@ public final class GATTServer {
         if attribute.permissions.contains(.readAuthentication)
             || attribute.permissions.contains(.writeAuthentication)
             && security < .high {
-            log?("Insufficient authentication")
+            log?("Insufficient authentication, UUID: \(attribute.uuid.name)")
             return .insufficientAuthentication
         }
         
         if attribute.permissions.contains(.readEncrypt)
             || attribute.permissions.contains(.writeEncrypt)
             && security < .medium {
-            log?("Insufficient encryption")
+            log?("Insufficient encryption, UUID: \(attribute.uuid.name)")
             return .insufficientEncryption
         }
-        log?("Permission granted")
+        log?("Permission granted, UUID: \(attribute.uuid.name)")
         return nil
     }
     
