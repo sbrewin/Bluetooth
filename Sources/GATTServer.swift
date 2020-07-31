@@ -196,13 +196,13 @@ public final class GATTServer {
                                   _ attribute: GATTDatabase.Attribute) -> ATT.Error? {
         
         guard attribute.permissions != permissions else {
-            log?("Permission granted, UUID: \(attribute.uuid.name)")
+            log?("Permission granted, UUID: \(String(describing: attribute.uuid.name))")
             return nil
         }
         log?("Permissions: \(permissions), Attribute permissions: \(attribute.permissions)")
         
         guard attribute.uuid != .clientCharacteristicConfiguration else {
-            log?("Permission granted, UUID: \(attribute.uuid.name)")
+            log?("Permission granted, UUID: \(String(describing: attribute.uuid.name))")
             return nil
         }
         
@@ -211,12 +211,12 @@ public final class GATTServer {
         // check permissions
         
         if permissions.contains(.read) && !attribute.permissions.contains(.read) {
-            log?("Read not permitted, UUID: \(attribute.uuid.name)")
+            log?("Read not permitted, UUID: \(String(describing: attribute.uuid.name))")
             return .readNotPermitted
         }
         
         if permissions.contains(.write) && !attribute.permissions.contains(.write) {
-            log?("Write not permitted, UUID: \(attribute.uuid.name)")
+            log?("Write not permitted, UUID: \(String(describing: attribute.uuid.name))")
             return .writeNotPermitted
         }
         
@@ -227,17 +227,17 @@ public final class GATTServer {
         if attribute.permissions.contains(.readAuthentication)
             || attribute.permissions.contains(.writeAuthentication)
             && security < .high {
-            log?("Insufficient authentication, UUID: \(attribute.uuid.name)")
+            log?("Insufficient authentication, UUID: \(String(describing: attribute.uuid.name))")
             return .insufficientAuthentication
         }
         
         if attribute.permissions.contains(.readEncrypt)
             || attribute.permissions.contains(.writeEncrypt)
             && security < .medium {
-            log?("Insufficient encryption, UUID: \(attribute.uuid.name)")
+            log?("Insufficient encryption, UUID: \(String(describing: attribute.uuid.name))")
             return .insufficientEncryption
         }
-        log?("Permission granted, UUID: \(attribute.uuid.name)")
+        log?("Permission granted, UUID: \(String(describing: attribute.uuid.name))")
         return nil
     }
     
