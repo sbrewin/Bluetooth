@@ -311,8 +311,11 @@ public final class GATTClient {
                                                   descriptors: [GATTClient.Descriptor],
                                                   completion: @escaping (GATTClientResponse<()>) -> ()) {
         
-        guard let descriptor = descriptors.first(where: { $0.uuid == .clientCharacteristicConfiguration })
-            else { completion(.error(GATTClientError.clientCharacteristicConfigurationNotAllowed(characteristic))); return }
+        guard let descriptor = descriptors.first(where: { $0.uuid == .clientCharacteristicConfiguration }) else {
+            log?("Client characteristic configuration not allowed for characteristic: \(characteristic)")
+            completion(.error(GATTClientError.clientCharacteristicConfigurationNotAllowed(characteristic))); return
+        }
+        log?("Client characteristic configuration descriptor: \(descriptor)")
         
         var clientConfiguration = GATTClientCharacteristicConfiguration()
         
