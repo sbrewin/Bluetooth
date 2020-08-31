@@ -327,15 +327,15 @@ public final class GATTClient {
             clientConfiguration.configuration.insert(.indicate)
         }
         
+        log?("Writing descriptor: \(descriptor), data: \(clientConfiguration.data)")
         writeDescriptor(descriptor, data: clientConfiguration.data) { [unowned self] (response) in
-            
+            self.log?("Writing descriptor response: \(response)")
             switch response {
                 
             case .error:
                 break
                 
             case .value:
-                
                 self.notifications[characteristic.handle.value] = notification
                 self.indications[characteristic.handle.value] = indication
             }
