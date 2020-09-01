@@ -71,12 +71,12 @@ internal final class ATTConnection {
     /// Performs the actual IO for recieving data.
     public func read() throws -> Bool {
         
-        //log?("Attempt read")
+        log?("ATTConnection: Attempted read")
         
         guard let recievedData = try socket.recieve(Int(maximumTransmissionUnit.rawValue))
             else { return false } // no data availible to read
         
-        //log?("Recieved data (\(recievedData.count) bytes)")
+        log?("ATTConnection: Recieved data 0x\(recievedData.hexEncodedString())")
         
         // valid PDU data length
         guard recievedData.count >= 1 // at least 1 byte for ATT opcode
@@ -88,7 +88,7 @@ internal final class ATTConnection {
         guard let opcode = ATT.Opcode(rawValue: opcodeByte)
             else { throw Error.garbageResponse(recievedData) }
         
-        //log?("Recieved opcode \(opcode)")
+        log?("ATTConnection: Recieved opcode \(opcode)")
         
         // Act on the received PDU based on the opcode type
         switch opcode.type {
@@ -392,6 +392,8 @@ internal final class ATTConnection {
     }
     
     private func handle(notify data: Data, opcode: ATT.Opcode) throws {
+        
+        log?("ATTConnection: Notify data: 0x\(data.hexEncodedString()), opcode: \(opcode))")
         
         var foundPDU: ATTProtocolDataUnit?
         

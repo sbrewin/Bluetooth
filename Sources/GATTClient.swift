@@ -327,7 +327,7 @@ public final class GATTClient {
             clientConfiguration.configuration.insert(.indicate)
         }
         
-        log?("Writing descriptor: \(descriptor), UUID: \(descriptor.uuid), data: 0x\(clientConfiguration.data.hexEncodedString())")
+        log?("Writing descriptor: \(descriptor), data: 0x\(clientConfiguration.data.hexEncodedString())")
         writeDescriptor(descriptor, data: clientConfiguration.data) { [unowned self] (response) in
             
             switch response {
