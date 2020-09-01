@@ -76,7 +76,7 @@ internal final class ATTConnection {
         guard let recievedData = try socket.recieve(Int(maximumTransmissionUnit.rawValue))
             else { return false } // no data availible to read
         
-        log?("ATTConnection: Recieved data 0x\(recievedData.hexEncodedString())")
+        log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
         
         // valid PDU data length
         guard recievedData.count >= 1 // at least 1 byte for ATT opcode
@@ -88,7 +88,7 @@ internal final class ATTConnection {
         guard let opcode = ATT.Opcode(rawValue: opcodeByte)
             else { throw Error.garbageResponse(recievedData) }
         
-        log?("ATTConnection: Recieved opcode \(opcode)")
+        log?("ATTConnection: Received opcode \(opcode)")
         
         // Act on the received PDU based on the opcode type
         switch opcode.type {
@@ -129,7 +129,7 @@ internal final class ATTConnection {
         
         let opcode = sendOperation.opcode
         
-        log?("ATTConnection: Did write \(opcode)")
+        log?("ATTConnection: For opcode \(opcode)")
         
         /* Based on the operation type, set either the pending request or the
         * pending indication. If it came from the write queue, then there is

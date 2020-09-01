@@ -72,13 +72,13 @@ public final class GATTClient {
     
     /// Performs the actual IO for recieving data.
     public func read() throws -> Bool {
-        
+        log?("Reading from connection: \(connection)")
         return try connection.read()
     }
     
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
-        
+        log?("Writing to connection: \(connection)")
         return try connection.write()
     }
     
