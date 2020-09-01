@@ -342,7 +342,6 @@ public final class GATTClient {
                 self.notifications[characteristic.handle.value] = notification
                 self.indications[characteristic.handle.value] = indication
             }
-            
             completion(response)
         }
     }
@@ -571,7 +570,7 @@ public final class GATTClient {
     private func writeAttributeValue(_ attribute: UInt16,
                                      data: Data,
                                      completion: @escaping (GATTClientResponse<()>) -> ()) {
-        
+        log?("Writing attribute \(attribute), data: \(data.hexEncodedString())")
         let data = Data(data.prefix(Int(maximumTransmissionUnit.rawValue) - 3))
         
         let pdu = ATTWriteRequest(handle: attribute, value: data)
@@ -1129,12 +1128,12 @@ public final class GATTClient {
     }
     
     private func notification(_ notification: ATTHandleValueNotification) {
-        
+        log?("Notification handle: \(notification.handle), value: \(notification.value)")
         notifications[notification.handle]?(notification.value)
     }
     
     private func indication(_ indication: ATTHandleValueIndication) {
-        
+        log?("Indication handle: \(indication.handle), value: \(indication.value)")
         let confirmation = ATTHandleValueConfirmation()
         
         // send acknowledgement
