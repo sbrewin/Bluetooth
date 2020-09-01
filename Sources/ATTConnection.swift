@@ -71,7 +71,7 @@ internal final class ATTConnection {
     /// Performs the actual IO for recieving data.
     public func read() throws -> Bool {
         
-        log?("ATTConnection: Attempted read")
+        //log?("ATTConnection: Attempted read")
         
         guard let recievedData = try socket.recieve(Int(maximumTransmissionUnit.rawValue))
             else { return false } // no data availible to read
@@ -119,7 +119,7 @@ internal final class ATTConnection {
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
         
-        log?("ATTConnection: Attempting write")
+        //log?("ATTConnection: Attempting write")
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
