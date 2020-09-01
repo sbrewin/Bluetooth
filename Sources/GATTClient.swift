@@ -54,9 +54,10 @@ public final class GATTClient {
                 log: ((String) -> ())? = nil,
                 writePending: (() -> ())? = nil) {
         
-        self.connection = ATTConnection(socket: socket)
-        self.preferredMaximumTransmissionUnit = maximumTransmissionUnit
         self.log = log
+        self.connection = ATTConnection(socket: socket)
+        self.connection.log = log
+        self.preferredMaximumTransmissionUnit = maximumTransmissionUnit
         self.writePending = writePending
         
         // setup notifications and indications
@@ -72,13 +73,13 @@ public final class GATTClient {
     
     /// Performs the actual IO for recieving data.
     public func read() throws -> Bool {
-        log?("Reading from connection: \(connection)")
+        //log?("Reading from connection: \(connection)")
         return try connection.read()
     }
     
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
-        log?("Writing to connection: \(connection)")
+        //log?("Writing to connection: \(connection)")
         return try connection.write()
     }
     
