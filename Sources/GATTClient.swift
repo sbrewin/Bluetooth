@@ -342,6 +342,10 @@ public final class GATTClient {
                 self.log?("Response value: Indication: \(String(describing: indication))")
                 self.notifications[characteristic.handle.value] = notification
                 self.indications[characteristic.handle.value] = indication
+                self.log?("Notifications (\(self.notifications.count))... ")
+                self.notifications.forEach({notification in
+                    self.log?("Notification: \(notification)")
+                })
             }
             self.log?("Invoking completion...")
             completion(response)
