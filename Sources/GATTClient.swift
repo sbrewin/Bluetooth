@@ -327,7 +327,7 @@ public final class GATTClient {
             clientConfiguration.configuration.insert(.indicate)
         }
         
-        log?("Writing descriptor: \(descriptor), data: \(clientConfiguration.data)")
+        log?("Writing descriptor: \(descriptor), UUID: \(descriptor.uuid), data: 0x\(clientConfiguration.data.hexEncodedString())")
         writeDescriptor(descriptor, data: clientConfiguration.data) { [unowned self] (response) in
             
             switch response {
@@ -342,6 +342,7 @@ public final class GATTClient {
                 self.notifications[characteristic.handle.value] = notification
                 self.indications[characteristic.handle.value] = indication
             }
+            self.log?("Invoking completion...")
             completion(response)
         }
     }
@@ -570,7 +571,7 @@ public final class GATTClient {
     private func writeAttributeValue(_ attribute: UInt16,
                                      data: Data,
                                      completion: @escaping (GATTClientResponse<()>) -> ()) {
-        log?("Writing attribute \(attribute), data: \(data.hexEncodedString())")
+        log?("Writing attribute \(attribute), data: 0x\(data.hexEncodedString())")
         let data = Data(data.prefix(Int(maximumTransmissionUnit.rawValue) - 3))
         
         let pdu = ATTWriteRequest(handle: attribute, value: data)
