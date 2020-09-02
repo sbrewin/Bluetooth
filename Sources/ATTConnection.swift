@@ -73,14 +73,18 @@ internal final class ATTConnection {
         
         //log?("ATTConnection: Attempted read")
         
-        guard let recievedData = try socket.recieve(Int(maximumTransmissionUnit.rawValue))
-            else { return false } // no data availible to read
+        guard let recievedData = try socket.recieve(Int(maximumTransmissionUnit.rawValue)) else {
+            log?("ATTConnection: No data availible to read")
+            return false // no data availible to read
+        }
         
         log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
         
         // valid PDU data length
-        guard recievedData.count >= 1 // at least 1 byte for ATT opcode
-            else { throw Error.garbageResponse(recievedData) }
+        guard recievedData.count >= 1 else { // at least 1 byte for ATT opcode
+            log?("ATTConnection: Invalid PDU data length: \(recievedData.count)")
+            throw Error.garbageResponse(recievedData)
+        }
         
         let opcodeByte = recievedData[0]
         
