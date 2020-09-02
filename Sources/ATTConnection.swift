@@ -74,7 +74,7 @@ internal final class ATTConnection {
         //log?("ATTConnection: Attempted read")
         
         guard let recievedData = try socket.recieve(Int(maximumTransmissionUnit.rawValue)) else {
-            log?("ATTConnection: No data availible to read")
+            //log?("ATTConnection: No data availible to read")
             return false // no data availible to read
         }
         
