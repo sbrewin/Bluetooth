@@ -307,7 +307,7 @@ internal final class ATTConnection {
         
         // If no request is pending, then the response is unexpected. Disconnect the bearer.
         guard let sendOperation = self.pendingRequest else {
-            
+            log?("ATTConnection: Unexpected response. Data: 0x\(data.hexEncodedString()), opcode: \(opcode)")
             throw Error.unexpectedResponse(data)
         }
         
@@ -319,8 +319,10 @@ internal final class ATTConnection {
         // Retry for error response
         if opcode == .errorResponse {
             
-            guard let errorResponse = ATTErrorResponse(data: data)
-                else { throw Error.garbageResponse(data) }
+            guard let errorResponse = ATTErrorResponse(data: data) else {
+                log?("ATTConnection: Error response. \(data.hexEncodedString()), opcode: \(opcode)")
+                throw Error.garbageResponse(data)
+            }
             
             let (errorRequestOpcode, didRetry) = handle(errorResponse: errorResponse)
             
@@ -334,8 +336,10 @@ internal final class ATTConnection {
             
         } else {
             
-            guard let mappedRequestOpcode = opcode.request
-                else { throw Error.unexpectedResponse(data) }
+            guard let mappedRequestOpcode = opcode.request else {
+                log?("ATTConnection: Unexpected response. Data: 0x\(data.hexEncodedString()), opcode: \(opcode)")
+                throw Error.unexpectedResponse(data)
+            }
             
             requestOpcode = mappedRequestOpcode
         }
@@ -345,7 +349,7 @@ internal final class ATTConnection {
         
         /// Verify the recieved response belongs to the pending request
         guard sendOperation.opcode == requestOpcode else {
-            
+            log?("ATTConnection: Unexpected response. Data: 0x\(data.hexEncodedString()), opcode: \(opcode)")
             throw Error.unexpectedResponse(data)
         }
         
@@ -358,8 +362,10 @@ internal final class ATTConnection {
     private func handle(confirmation data: Data, opcode: ATT.Opcode) throws {
         
         // Disconnect the bearer if the confirmation is unexpected or the PDU is invalid.
-        guard let sendOperation = pendingIndication
-            else { throw Error.unexpectedResponse(data) }
+        guard let sendOperation = pendingIndication else {
+            log?("ATTConnection: Unexpected response. Data: 0x\(data.hexEncodedString()), opcode: \(opcode)")
+            throw Error.unexpectedResponse(data)
+        }
         
         self.pendingIndication = nil
         
@@ -382,8 +388,10 @@ internal final class ATTConnection {
         */
         
         // Received request while another is pending.
-        guard incomingRequest == false
-            else { throw Error.unexpectedResponse(data) }
+        guard incomingRequest == false else {
+            log?("ATTConnection: Unexpected request. Data: 0x\(data.hexEncodedString()), opcode: \(opcode)")
+            throw Error.unexpectedResponse(data)
+        }
         
         incomingRequest = true
         
@@ -418,7 +426,7 @@ internal final class ATTConnection {
         if foundPDU == nil && opcode.type == .request {
             
             let errorResponse = ATTErrorResponse(request: opcode, attributeHandle: 0x00, error: .requestNotSupported)
-            
+            log?("ATTConnection: Request error \(errorResponse)")
             let _ = send(errorResponse)
         }
         
@@ -429,7 +437,7 @@ internal final class ATTConnection {
     /// - Returns: The opcode of the request that errored 
     /// and whether the request will be sent again.
     private func handle(errorResponse: ATTErrorResponse) -> (opcode: ATTOpcode, didRetry: Bool) {
-        
+        log?("ATTConnection: Handle error \(errorResponse)")
         let opcode = errorResponse.request
         
         guard let pendingRequest = self.pendingRequest
