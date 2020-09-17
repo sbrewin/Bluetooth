@@ -286,7 +286,7 @@ public final class GATTServer {
     }
     
     private func didWriteAttribute(_ attributeHandle: UInt16, isLocalWrite: Bool = false) {
-        log?("GATTServer: didWriteAttribute handle \(attributeHandle), isLocalWrite: \(isLocalWrite)")
+        //log?("GATTServer: didWriteAttribute handle \(attributeHandle), isLocalWrite: \(isLocalWrite)")
         let (group, attribute) = database.attributeGroup(for: attributeHandle)
         assert(attribute.handle == attributeHandle)
         
@@ -299,16 +299,16 @@ public final class GATTServer {
         
         // notify connected client if write is from server and not client write request
         if isLocalWrite {
-            log?("GATTServer: local write to characteristic: \(characteristic)")
+            //log?("GATTServer: local write to characteristic: \(characteristic)")
             // Client configuration
             if let clientConfigurationDescriptor = characteristic.descriptors.first(where: { $0.uuid == .clientCharacteristicConfiguration }) {
-                log?("GATTServer: clientConfigurationDescriptor: \(clientConfigurationDescriptor)")
+                //log?("GATTServer: clientConfigurationDescriptor: \(clientConfigurationDescriptor)")
                 
                 guard let descriptor = GATTClientCharacteristicConfiguration(data: clientConfigurationDescriptor.value)
                     else {
                         return
                     }
-                log?("GATTServer: descriptor: \(descriptor), configuration: \(descriptor.configuration)")
+                //log?("GATTServer: descriptor: \(descriptor), configuration: \(descriptor.configuration)")
                 
                 // notify
                 if descriptor.configuration.contains(.notify) {
@@ -322,9 +322,8 @@ public final class GATTServer {
                 if descriptor.configuration.contains(.indicate) {
                     
                     let indication = ATTHandleValueIndication(attribute: attribute, maximumTransmissionUnit: connection.maximumTransmissionUnit)
-                    log?("GATTServer: sending indication: \(indication)")
+                    //log?("GATTServer: sending indication: \(indication)")
                     send(indication) { [unowned self] (confirmation) in
-                        
                         self.log?("GATTServer: Confirmation: \(confirmation)")
                     }
                 }

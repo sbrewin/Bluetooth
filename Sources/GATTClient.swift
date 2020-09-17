@@ -316,7 +316,7 @@ public final class GATTClient {
             log?("GATTClient: Client characteristic configuration not allowed for characteristic: \(characteristic)")
             completion(.error(GATTClientError.clientCharacteristicConfigurationNotAllowed(characteristic))); return
         }
-        log?("GATTClient: Client characteristic configuration descriptor: \(descriptor)")
+        //log?("GATTClient: Client characteristic configuration descriptor: \(descriptor)")
         
         var clientConfiguration = GATTClientCharacteristicConfiguration()
         
@@ -328,26 +328,26 @@ public final class GATTClient {
             clientConfiguration.configuration.insert(.indicate)
         }
         
-        log?("GATTClient: Writing descriptor: \(descriptor), data: 0x\(clientConfiguration.data.hexEncodedString())")
+        //log?("GATTClient: Writing descriptor: \(descriptor), data: 0x\(clientConfiguration.data.hexEncodedString())")
         writeDescriptor(descriptor, data: clientConfiguration.data) { [unowned self] (response) in
             
             switch response {
                 
             case .error:
-                self.log?("GATTClient: Response error")
+                self.log?("GATTClient: Response error: \(response)")
                 break
                 
             case .value:
-                self.log?("GATTClient: Response value: Notification: \(String(describing: notification))")
-                self.log?("GATTClient: Response value: Indication: \(String(describing: indication))")
+                //self.log?("GATTClient: Response value: Notification: \(String(describing: notification))")
+                //self.log?("GATTClient: Response value: Indication: \(String(describing: indication))")
                 self.notifications[characteristic.handle.value] = notification
                 self.indications[characteristic.handle.value] = indication
-                self.log?("GATTClient: Notifications (\(self.notifications.count))... ")
-                self.notifications.forEach({notification in
-                    self.log?("GATTClient: Notification: \(notification)")
-                })
+                //self.log?("GATTClient: Notifications (\(self.notifications.count))... ")
+                //self.notifications.forEach({notification in
+                //    self.log?("GATTClient: Notification: \(notification)")
+                //})
             }
-            self.log?("GATTClient: Completion...")
+            //self.log?("GATTClient: Completion...")
             completion(response)
         }
     }
@@ -356,7 +356,7 @@ public final class GATTClient {
     
     @inline(__always)
     private func registerATTHandlers() {
-        self.log?("GATTClient: Registering ATTHandlers)")
+        //self.log?("GATTClient: Registering ATTHandlers)")
         // value notifications / indications
         connection.register { [weak self] in self?.notification($0) }
         connection.register { [weak self] in self?.indication($0) }
@@ -365,29 +365,31 @@ public final class GATTClient {
     @inline(__always)
     private func send <Request: ATTProtocolDataUnit, Response> (_ request: Request, response: @escaping (ATTResponse<Response>) -> ()) {
         
-        let log = self.log
-        
-        log?("GATTClient: Request: \(request)")
+        //log?("GATTClient: Request: \(request)")
         
         let callback: (AnyATTResponse) -> () = {
-            log?("GATTClient: Response: \($0.rawValue)")
+            //log?("GATTClient: Response: \($0.rawValue)")
             response(ATTResponse<Response>($0))
         }
         
         let responseType: ATTProtocolDataUnit.Type = Response.self
         
-        guard let _ = connection.send(request, response: (callback, responseType))
-            else { fatalError("Could not add PDU to queue: \(request)") }
+        guard let _ = connection.send(request, response: (callback, responseType)) else {
+            log?("GATTCLient: Could not add PDU to queue: \(request)")
+            fatalError("Could not add PDU to queue: \(request)")
+        }
     }
     
     @inline(__always)
     private func send <Request: ATTProtocolDataUnit> (_ request: Request) {
         
-        log?("GATTClient: Request: \(request)")
+        //log?("GATTClient: Request: \(request)")
         
-        guard let _ = connection.send(request)
-            else { fatalError("Could not add PDU to queue: \(request)") }
-    }
+        guard let _ = connection.send(request) else
+        {
+            log?("GATTCLient: Could not add PDU to queue: \(request)")
+            fatalError("Could not add PDU to queue: \(request)")}
+        }
     
     internal func endHandle(for characteristic: Characteristic,
                             service: (declaration: Service, characteristics: [Characteristic])) -> UInt16 {
@@ -576,7 +578,7 @@ public final class GATTClient {
     private func writeAttributeValue(_ attribute: UInt16,
                                      data: Data,
                                      completion: @escaping (GATTClientResponse<()>) -> ()) {
-        log?("GATTClient: Writing attribute \(attribute), data: 0x\(data.hexEncodedString())")
+        //log?("GATTClient: Writing attribute \(attribute), data: 0x\(data.hexEncodedString())")
         let data = Data(data.prefix(Int(maximumTransmissionUnit.rawValue) - 3))
         
         let pdu = ATTWriteRequest(handle: attribute, value: data)
@@ -665,7 +667,7 @@ public final class GATTClient {
             
             let finalMTU = ATTMaximumTransmissionUnit(server: pdu.serverMTU, client: clientMTU.rawValue)
             
-            log?("GATTClient: MTU Exchange (\(clientMTU) -> \(finalMTU))")
+            //log?("GATTClient: MTU Exchange (\(clientMTU) -> \(finalMTU))")
             
             self.maximumTransmissionUnit = finalMTU
         }
@@ -1139,7 +1141,7 @@ public final class GATTClient {
     }
     
     private func indication(_ indication: ATTHandleValueIndication) {
-        log?("GATTClient: Indication handle: \(indication.handle), value: \(indication.value)")
+        //log?("GATTClient: Indication handle: \(indication.handle), value: \(indication.value)")
         let confirmation = ATTHandleValueConfirmation()
         
         // send acknowledgement
