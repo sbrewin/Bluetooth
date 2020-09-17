@@ -78,7 +78,7 @@ internal final class ATTConnection {
             return false // no data availible to read
         }
         
-        log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
+        //log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
         
         // valid PDU data length
         guard recievedData.count >= 1 else { // at least 1 byte for ATT opcode
@@ -89,10 +89,12 @@ internal final class ATTConnection {
         let opcodeByte = recievedData[0]
         
         // valid opcode
-        guard let opcode = ATT.Opcode(rawValue: opcodeByte)
-            else { throw Error.garbageResponse(recievedData) }
+        guard let opcode = ATT.Opcode(rawValue: opcodeByte) else {
+            log?("ATTConnection: Invalid opcodeByte: 0x\(opcodeByte.toHexadecimal())")
+            throw Error.garbageResponse(recievedData)
+        }
         
-        log?("ATTConnection: Read opcode \(opcode)")
+        //log?("ATTConnection: Read opcode \(opcode)")
         
         // Act on the received PDU based on the opcode type
         switch opcode.type {
@@ -127,13 +129,13 @@ internal final class ATTConnection {
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
-        log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
+        //log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
         
         try socket.send(sendOperation.data)
         
         let opcode = sendOperation.opcode
         
-        log?("ATTConnection: Write opcode \(opcode)")
+        //log?("ATTConnection: Write opcode \(opcode)")
         
         /* Based on the operation type, set either the pending request or the
         * pending indication. If it came from the write queue, then there is
@@ -218,7 +220,7 @@ internal final class ATTConnection {
         let attributeOpcode = PDU.attributeOpcode
         let type = attributeOpcode.type
         
-        log?("ATTConection: pdu: \(pdu), type: \(type)")
+        //log?("ATTConection: pdu: \(pdu), type: \(type)")
         // Only request and indication PDUs should have response callbacks. 
         switch type {
             
@@ -249,7 +251,7 @@ internal final class ATTConnection {
                                           opcode: attributeOpcode,
                                           data: encodedPDU,
                                           response: response)
-        log?("ATTConection: sendOpcode: \(sendOpcode)")
+        //log?("ATTConection: sendOpcode: \(sendOpcode)")
         // increment ID
         nextSendOpcodeID += 1
         
@@ -257,25 +259,25 @@ internal final class ATTConnection {
         switch type {
             
         case .request:
-            log?("ATTConection: appending to requestQueue")
+            //log?("ATTConection: appending to requestQueue")
             requestQueue.append(sendOpcode)
             
         case .indication:
-            log?("ATTConection: appending to indicationQueue")
+            //log?("ATTConection: appending to indicationQueue")
             indicationQueue.append(sendOpcode)
             
         case .response,
              .command,
              .confirmation,
              .notification:
-            log?("ATTConection: appending to writeQueue")
+            //log?("ATTConection: appending to writeQueue")
             writeQueue.append(sendOpcode)
         }
         
-        log?("ATTConection: write pending...")
+        //log?("ATTConection: write pending...")
         writePending?()
 
-        log?("ATTConection: sendOpcode.identifier \(sendOpcode.identifier)")
+        //log?("ATTConection: sendOpcode.identifier \(sendOpcode.identifier)")
         return sendOpcode.identifier
     }
     
@@ -405,7 +407,7 @@ internal final class ATTConnection {
     
     private func handle(notify data: Data, opcode: ATT.Opcode) throws {
         
-        log?("ATTConnection: Notify data: 0x\(data.hexEncodedString()), opcode: \(opcode))")
+        //log?("ATTConnection: Notify data: 0x\(data.hexEncodedString()), opcode: \(opcode))")
         
         var foundPDU: ATTProtocolDataUnit?
         
@@ -441,7 +443,7 @@ internal final class ATTConnection {
     /// - Returns: The opcode of the request that errored 
     /// and whether the request will be sent again.
     private func handle(errorResponse: ATTErrorResponse) -> (opcode: ATTOpcode, didRetry: Bool) {
-        log?("ATTConnection: Handle error \(errorResponse)")
+        log?("ATTConnection: Handling error \(errorResponse)")
         let opcode = errorResponse.request
         
         guard let pendingRequest = self.pendingRequest
