@@ -1136,7 +1136,7 @@ public final class GATTClient {
     }
     
     private func notification(_ notification: ATTHandleValueNotification) {
-        //log?("GATTClient: Notification handle: \(notification.handle), value: \(notification.value)")
+        log?("GATTClient: Notification handle: \(notification.handle), value: 0x\(notification.value.hexEncodedString())")
         notifications[notification.handle]?(notification.value)
     }
     
