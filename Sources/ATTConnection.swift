@@ -125,11 +125,11 @@ internal final class ATTConnection {
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
         
-        log?("ATTConnection: Attempting write")
+        //log?("ATTConnection: Attempting write")
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
-        //log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
+        log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
         
         try socket.send(sendOperation.data)
         
