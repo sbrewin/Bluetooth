@@ -78,7 +78,7 @@ internal final class ATTConnection {
             return false // no data availible to read
         }
         
-        //log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
+        log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
         
         // valid PDU data length
         guard recievedData.count >= 1 else { // at least 1 byte for ATT opcode
@@ -125,7 +125,7 @@ internal final class ATTConnection {
     /// Performs the actual IO for sending data.
     public func write() throws -> Bool {
         
-        //log?("ATTConnection: Attempting write")
+        log?("ATTConnection: Attempting write")
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
