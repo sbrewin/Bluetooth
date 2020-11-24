@@ -78,7 +78,7 @@ internal final class ATTConnection {
             return false // no data availible to read
         }
         
-        log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
+        //log?("ATTConnection: Received data 0x\(recievedData.hexEncodedString())")
         
         // valid PDU data length
         guard recievedData.count >= 1 else { // at least 1 byte for ATT opcode
@@ -129,7 +129,7 @@ internal final class ATTConnection {
         
         guard let sendOperation = pickNextSendOpcode()
             else { return false }
-        log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
+        //log?("ATTConnection: Sending data... 0x\(sendOperation.data.hexEncodedString())")
         
         try socket.send(sendOperation.data)
         
