@@ -78,7 +78,7 @@ public enum ACLPacketType: UInt16, BitMaskOption {
     /// DH5 may be used
     case packetDH5mayBeUsed = 0x8000
     
-    public static let allCases: Set<ACLPacketType> = [
+    public static let allCases: [ACLPacketType] = [
         .packet2DH1mayNotBeUsed,
         .packet3DH1mayNotBeUsed,
         .packetDM1mayBeUsed,
@@ -106,7 +106,7 @@ public enum SCOPacketType: UInt16, BitMaskOption {
     /// HV3
     case hv3 = 0x0080
     
-    public static let allCases: Set<SCOPacketType> = [
+    public static let allCases: [SCOPacketType] = [
         .hv1,
         .hv2,
         .hv3

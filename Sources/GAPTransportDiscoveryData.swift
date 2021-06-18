@@ -130,7 +130,7 @@ public enum GAPTransportDiscoveryDataFlag: UInt8, BitMaskOption {
     /// Temporarily Unavailable
     case temporalilyUnavailable = 0b10000
     
-    public static let allCases: Set<GAPTransportDiscoveryDataFlag> = [
+    public static let allCases: [GAPTransportDiscoveryDataFlag] = [
         .seeker,
         .provider,
         .dataIncomplete,
